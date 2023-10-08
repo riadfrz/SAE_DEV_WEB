@@ -1,0 +1,112 @@
+.designbetter_website_book_asse.designbetter_website_book_asse {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse2.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card2.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card2.svg');
+}
+.designbetter_website_book_asse2.designbetter_website_book_asse2 {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse3.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card3.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card3.svg');
+}
+.designbetter_website_book_asse3.designbetter_website_book_asse3 {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse4.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card4.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card4.svg');
+}
+.designbetter_website_book_asse4.designbetter_website_book_asse4 {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse5.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card5.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card5.svg');
+}
+.designbetter_website_book_asse5.designbetter_website_book_asse5 {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse6.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card6.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card6.svg');
+}
+.designbetter_website_book_asse6.designbetter_website_book_asse6 {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse7.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card7.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card7.svg');
+}
+.designbetter_website_book_asse7.designbetter_website_book_asse7 {
+  background-image:/* webpackIgnore: true */ url('assets/designbetter_website_book_asse8.jpg');
+  -webkit-mask-image:/* webpackIgnore: true */ url('assets/card8.svg');
+  mask-image:/* webpackIgnore: true */ url('assets/card8.svg');
+}
+.root {
+  position: absolute;
+  left: 0;
+  top: 2519px;
+  width: 3244px;
+  height: 789px;
+  align-items: flex-start;
+}
+.button {
+  position: absolute;
+  left: 25.9248%;
+  right: 69.1739%;
+  top: 90.7478%;
+  bottom: 0;
+  place-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  outline: solid 1px #0f5f53cc;
+  outline-offset: -1px;
+  border-radius: 100px;
+  background-color: #ec66a1;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+.vOIRPLUS {
+  color: #fff;
+  font-size: 19.3px;
+  line-height: 58px;
+  font-weight: bold;
+  font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.15px;
+  z-index: 0;
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.agenda {
+  color: #ffd581;
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: bold;
+  font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: -0.15px;
+  position: absolute;
+  left: 17.3859%;
+  right: 59.217%;
+  top: 0;
+  bottom: 86.0583%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.frame2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 24.5881%;
+  bottom: 10.5196%;
+  align-items: flex-start;
+  padding: 0 56px;
+}
+.frame1 {
+  position: absolute;
+  left: 0;
+  right: 1371px;
+  top: -37px;
+  height: min-content;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 0 56px;
+  overflow-x: auto;
+}

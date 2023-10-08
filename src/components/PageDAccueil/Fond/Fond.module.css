@@ -1,0 +1,35 @@
+.root {
+  position: absolute;
+  left: -1px;
+  top: 570px;
+  width: 1932px;
+  height: 3659px;
+  align-items: flex-start;
+}
+.vertFond {
+  position: absolute;
+  left: 0.0518%;
+  right: 0.5694%;
+  top: 0;
+  bottom: 73.9273%;
+  background-color: #0f5f53cc;
+  box-shadow: 0px 4px 50px 0px #00000040;
+}
+.vertFond3 {
+  position: absolute;
+  left: 0;
+  right: 0.5694%;
+  top: 51.8448%;
+  bottom: 22.0825%;
+  background-color: #0f5f53cc;
+  box-shadow: 0px 4px 50px 0px #00000040;
+}
+.vertFond4 {
+  position: absolute;
+  left: 0.0518%;
+  right: 0;
+  top: 99.2348%;
+  bottom: 0;
+  background-color: #0f5f53cc;
+  box-shadow: 0px 4px 50px 0px #00000040;
+}
