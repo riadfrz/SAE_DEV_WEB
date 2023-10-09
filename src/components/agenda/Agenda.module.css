@@ -1,0 +1,103 @@
+.agenda {
+  background-color: #0F5F53CC;
+  
+}
+.agenda2 {
+  max-width: 1040px;
+  margin: auto;
+  
+}
+.heading h1 {
+  font-size: 3.5rem;
+  text-align: center;
+ 
+  padding-top: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+
+  color:#FFD581 ;
+}
+
+
+.slider_container {
+  padding: 3rem 0;
+}
+
+
+.card {
+  width: 100%; 
+  margin-top:5rem;
+  border-radius: 10px;
+  background:#fff;
+  border:0.05rem white solid;
+  overflow: hidden; /* Prevents child elements from overflowing the card */
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border:1rem white ;
+  padding: 10px;
+
+  object-fit: cover;
+}
+.card h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 0.5rem;
+  background-color: white;
+  color:#FF5480;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maximum number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card p {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color:#9B9B9B;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Maximum number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .heading h1 {
+    font-size: 1.5rem;
+    
+  }
+  
+
+
+  .card {
+    width: 100%;
+  }
+}
+
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
