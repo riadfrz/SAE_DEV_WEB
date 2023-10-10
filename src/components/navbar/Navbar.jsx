@@ -7,6 +7,7 @@ import {
   AiOutlineMenu,
   AiOutlineClose,
 } from 'react-icons/ai';
+import { Link } from "react-router-dom";
 
 import { FaTableCells } from "react-icons/fa6";
 
@@ -16,11 +17,13 @@ const Navbar = () => {
 
   return (
     <header className={styles.navbar}>
-      <img className={styles.img} src={Logo} alt='Logo' style={{ width: '180px', height: '100px' }}/>
+
+        <Link to="/"><img className={styles.img} src={Logo} alt='Logo' style={{ width: '180px', height: '100px' }}/></Link>
+
       <nav>
         <ul className={navState ? [styles.menu, styles.active].join(' ') : [styles.menu]} >
           <li>
-            <a href='/#'>Communauté</a>
+            <Link to="/presentation">Communauté</Link>
           </li>
           <li>
             <a href='/#'>Domaines d'actions</a>
