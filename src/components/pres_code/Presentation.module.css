@@ -19,7 +19,7 @@
     top: 123px;
     width: 1321px;
     height: 584px;
-    background-image:/* webpackIgnore: true */ url('assets/image_processing20221115238301.jpg');
+    background-image:/* webpackIgnore: true */ url('/public/image_processing20221115238301.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

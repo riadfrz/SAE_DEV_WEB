@@ -1,16 +1,15 @@
-import { memo } from 'react';
+import React, { memo } from 'react';
 import type { FC } from 'react';
 
 import resets from '../_resets.module.css';
-import { BgIcon } from './BgIcon';
-import Footer from "./footer/Footer";
 import classes from './Presentation.module.css';
+import Footer from "../footer/Footer";
 
 interface Props {
     className?: string;
 }
 /* @figmaId 27:2 */
-export const Presentation: FC<Props> = memo(function Presentation(props = {}) {
+export const Pres: FC<Props> = memo(function Presentation(props = {}) {
     return (
         <div className={`${resets.storybrainResets} ${classes.root}`}>
             <div className={classes.image_processing20221115238301}></div>
@@ -116,26 +115,7 @@ export const Presentation: FC<Props> = memo(function Presentation(props = {}) {
                     instances délibératives, jouant ainsi un rôle essentiel dans le processus décisionnel de Morlaix Communauté.
                 </div>
             </div>
-            <div className={classes.rectangle20}></div>
-            <div className={classes.rectangle24}></div>
-            <div className={classes.rectangle22}></div>
-            <div className={classes.rectangle23}></div>
-            <Footer3 className={classes.footer4} classes={{ logo: classes.logo }} />
-            <div className={classes.rectangle1}></div>
-            <div className={classes.logo2}></div>
-            <div className={classes.communaute}>Communauté</div>
-            <div className={classes.domainesDActions}>Domaines d’actions</div>
-            <div className={classes.lesGrandsProjets}>Les grands projets</div>
-            <div className={classes.lesEquipements}>Les équipements</div>
-            <div className={classes.line1}></div>
-            <div className={classes.line2}></div>
-            <div className={classes.carre}></div>
-            <div className={classes.bG}>
-                <BgIcon className={classes.icon} />
-            </div>
-            <div className={classes.typeSomething}>Rechercher...</div>
-            <div className={classes.magnifyingGlass}></div>
-            <div className={classes.vertFond4}></div>
+
         </div>
     );
 });

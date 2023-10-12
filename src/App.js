@@ -15,7 +15,7 @@ function App() {
       <Actu />
       <Agenda />
       {/* <Carte /> */}
-    
+   <Footer />
 
     </div>
   );
