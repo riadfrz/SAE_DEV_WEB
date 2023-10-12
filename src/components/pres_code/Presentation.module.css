@@ -1,0 +1,579 @@
+.footer4.footer4 {
+    left: -13px;
+    top: 4438px;
+}
+.logo.logo {
+    background-image:/* webpackIgnore: true */ url('assets/logo2.jpg');
+}
+.root {
+    position: relative;
+    width: 1920px;
+    height: 5016px;
+    align-items: flex-start;
+    background-color: #fff;
+    overflow: hidden;
+}
+.image_processing20221115238301 {
+    position: absolute;
+    left: 0;
+    top: 123px;
+    width: 1321px;
+    height: 584px;
+    background-image:/* webpackIgnore: true */ url('/public/image_processing20221115238301.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rectangle14 {
+    position: absolute;
+    left: 1015px;
+    top: 269px;
+    width: 600px;
+    height: 169px;
+    background-color: #fff;
+}
+.presentation {
+    color: #3a3a3a;
+    font-size: 80px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: 1033px;
+    top: calc(50% - 2157.5px);
+    width: 1607px;
+    height: 163px;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-50%);
+}
+.quiSommeNous {
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: -16px;
+    top: 707px;
+    width: 1011px;
+    height: 107px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.leConseilDeCommunaute {
+    position: absolute;
+    left: 134px;
+    top: 1390px;
+    width: 1012px;
+    height: 107px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textBlock {
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock2 {
+    margin-top: 0;
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.lesCommissions {
+    position: absolute;
+    left: -52px;
+    top: 3541px;
+    width: 1011px;
+    height: 107px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textBlock3 {
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock4 {
+    margin-top: 0;
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.depuisLe12Avril2021LeBureauCom {
+    position: absolute;
+    left: 211px;
+    top: 2501px;
+    width: 1676px;
+    height: 967px;
+    justify-content: center;
+    flex-direction: column;
+}
+.textBlock5 {
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock6 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock7 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock8 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock9 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock10 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.leBureauCommunautaire {
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: 121px;
+    top: 2430px;
+    width: 1011px;
+    height: 107px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.morlaixCommunauteEtablissement {
+    position: absolute;
+    left: 224px;
+    top: 814px;
+    width: 1650px;
+    height: 506px;
+    justify-content: center;
+    flex-direction: column;
+}
+.textBlock11 {
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock12 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock13 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.morlaixCommunauteComposeeDe26C {
+    position: absolute;
+    left: 219px;
+    top: 1444px;
+    width: 1655px;
+    height: 911px;
+    justify-content: center;
+    flex-direction: column;
+}
+.textBlock14 {
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock15 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock16 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock17 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock18 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock19 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.lesCommissionsDeMorlaixCommuna {
+    position: absolute;
+    left: 211px;
+    top: 3584px;
+    width: 1671px;
+    height: 582px;
+    justify-content: center;
+    flex-direction: column;
+}
+.textBlock20 {
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock21 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock22 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.textBlock23 {
+    margin-top: 0;
+    color: #000;
+    font-size: 31px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+}
+.rectangle20 {
+    position: absolute;
+    left: 199px;
+    top: 792px;
+    width: 976px;
+    height: 22px;
+    border-radius: 14px;
+    background-color: #ec66a1;
+}
+.rectangle24 {
+    position: absolute;
+    left: 199px;
+    top: 1444px;
+    width: 1184px;
+    height: 27px;
+    border-radius: 14px;
+    background-color: #ec66a1;
+}
+.rectangle22 {
+    position: absolute;
+    left: 211px;
+    top: 2515px;
+    width: 1139px;
+    height: 22px;
+    border-radius: 14px;
+    background-color: #ec66a1;
+}
+.rectangle23 {
+    position: absolute;
+    left: 219px;
+    top: 3595px;
+    width: 938px;
+    height: 21px;
+    border-radius: 14px;
+    background-color: #ec66a1;
+}
+.rectangle1 {
+    position: absolute;
+    left: -7px;
+    top: -3px;
+    width: 1933px;
+    height: 123px;
+    background-color: #0f5f53cc;
+}
+.logo2 {
+    position: absolute;
+    left: 11px;
+    top: 20px;
+    width: 216px;
+    height: 76px;
+    background-image:/* webpackIgnore: true */ url('assets/logo3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.communaute {
+    color: #fff;
+    font-size: 19.3px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: 418px;
+    top: 26px;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+}
+.domainesDActions {
+    color: #fff;
+    font-size: 19.3px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: 654px;
+    top: 28px;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+}
+.lesGrandsProjets {
+    color: #fff;
+    font-size: 19.3px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: 950px;
+    top: 27px;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+}
+.lesEquipements {
+    color: #fff;
+    font-size: 19.3px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    position: absolute;
+    left: 1232px;
+    top: 27px;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+}
+.line1 {
+    transform-origin: bottom left;
+    position: absolute;
+    left: 338px;
+    top: 86px;
+    width: 65px;
+    max-width: 100%;
+    height: 0;
+    max-height: 100%;
+    outline: solid 2.5px #ec66a1cc;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+.line2 {
+    transform-origin: bottom left;
+    position: absolute;
+    left: 1470px;
+    top: 86px;
+    width: 65px;
+    max-width: 100%;
+    height: 0;
+    max-height: 100%;
+    outline: solid 2.5px #ec66a1cc;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+.carre {
+    position: absolute;
+    left: 1509px;
+    top: 36px;
+    width: 45px;
+    height: 45px;
+    background-image:/* webpackIgnore: true */ url('assets/carre.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bG {
+    position: absolute;
+    left: 1594px;
+    top: 31px;
+    width: 284px;
+    height: 52.6984px;
+    overflow: visible;
+}
+.icon {
+    width: 100%;
+    height: 100%;
+}
+.typeSomething {
+    color: #9b9b9b;
+    font-size: 13px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.0875px;
+    position: absolute;
+    left: 1616.4833px;
+    top: 45px;
+    width: 181.05px;
+    height: 25px;
+    justify-content: center;
+    flex-direction: column;
+}
+.magnifyingGlass {
+    position: absolute;
+    left: 1843.6833px;
+    top: 50px;
+    width: 18.0317px;
+    height: 15.2381px;
+    background-image:/* webpackIgnore: true */ url('assets/magnifyingGlass.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vertFond4 {
+    position: absolute;
+    left: -4px;
+    top: 4362px;
+    width: 1924px;
+    height: 28px;
+    background-color: #0f5f53cc;
+    box-shadow: 0px 4px 50px 0px #00000040;
+}
