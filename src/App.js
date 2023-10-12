@@ -4,6 +4,8 @@ import Hero from './components/hero/Hero'
 import Agenda from './components/agenda/Agenda'
 import Carte from './components/carte/carte'
 import Actu from './components/actu/Actu'
+import Event from './components/event/ImageSlider'
+import { SliderData } from './components/event/SliderData';
 import Footer from './components/footer/Footer'
 
 function App() {
@@ -13,9 +15,10 @@ function App() {
       <Navbar />
       <Hero />
       <Actu />
+      <Event slides={SliderData} />
       <Agenda />
-      {/* <Carte /> */}
-    
+      <Carte /> 
+      <Footer />
 
     </div>
   );

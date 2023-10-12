@@ -5,7 +5,17 @@
   background-color: #0F5F53CC;
  
 }
+.heading h1 {
+  font-size: 3rem;
+  text-align: center;
+ 
+  padding-top: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
 
+  color:#FFD581 ;
+}
 .actu .container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -61,17 +71,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.heading h1 {
-  font-size: 3rem;
-  text-align: center;
- 
-  padding-top: 5rem;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
 
-  color:#FFD581 ;
-}
 .btnContainer {
   display: flex;
   justify-content: center; /* Horizontally center */
@@ -100,6 +100,20 @@
 .button:active {
   background-color: #004080;
 }
+@media screen and (max-width: 600px) {
+
+  .actu {
+  
+    height:auto ;
+    
+   
+  }
+  .actu .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  }
 
 @media screen and (max-width: 400px) {
 
@@ -128,7 +142,7 @@
 
   }
   .button {
-  
+
     padding: 1.5rem 1rem;
     font-size: 1rem;
     

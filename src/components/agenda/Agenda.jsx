@@ -26,20 +26,19 @@ const Agenda = () => {
           spaceBetween={10}
           slidesPerView={5}
           navigation
-          breakpoints={{
-
-            340: {
-              width: 200,
-              slidesPerView: 1,
+          breakpoints={{    
+         
+            400: {
+              
+              slidesPerView: 2,
             },
-          
             768: {
-              width: 768,
-              slidesPerView: 4,
+
+              slidesPerView: 3,
             },
 
             1040: {
-              width: 1040,
+
               slidesPerView: 5,
             },
           }}
