@@ -1,7 +1,5 @@
 import Navbar from "../components/navbar/Navbar";
-import Hero from "../components/hero/Hero";
-import Actu from "../components/actu/Actu";
-import Agenda from "../components/agenda/Agenda";
+import Footer from "../components/footer/Footer";
 import React from "react";
 
 function Presentation() {
@@ -9,6 +7,7 @@ function Presentation() {
         <div>
 
             <Navbar />
+            <Footer />
         </div>
     );
 }
