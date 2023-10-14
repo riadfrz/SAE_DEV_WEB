@@ -1,9 +1,13 @@
-import React, { memo } from 'react';
+
+import {memo, React} from 'react';
 import type { FC } from 'react';
 
 import resets from '../_resets.module.css';
+import { BgIcon } from './BgIcon';
 import classes from './Presentation.module.css';
-import Footer from "../footer/Footer";
+import {Link} from "react-router-dom";
+import styles from "../navbar/Navbar.module.css";
+import Logo from "../../images/logo.jpg";
 
 interface Props {
     className?: string;
@@ -115,7 +119,16 @@ export const Pres: FC<Props> = memo(function Presentation(props = {}) {
                     instances délibératives, jouant ainsi un rôle essentiel dans le processus décisionnel de Morlaix Communauté.
                 </div>
             </div>
+            <div className={classes.rectangle20}></div>
+            <div className={classes.rectangle24}></div>
+            <div className={classes.rectangle22}></div>
+            <div className={classes.rectangle23}></div>
 
+
+            {/*<div className={classes.carre}></div>*/}
+            <div className={classes.bG}>
+                <BgIcon className={classes.icon} />
+            </div>
         </div>
     );
 });
