@@ -11,13 +11,13 @@
 }
 @media screen and (max-width: 768px) {
     /* Adjust the properties for smaller screens (you can customize these values) */
-    height: 3000px;
+    /* height: 3000px; */
     /* Additional adjustments if needed */
 }
 
 @media screen and (max-width: 480px) {
     /* Adjust the properties for even smaller screens */
-    height: 1500px;
+   /*  height: 1500px; */
     /* Additional adjustments if needed */
 }
 .image_processing20221115238301 {
