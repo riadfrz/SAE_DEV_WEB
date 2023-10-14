@@ -33,16 +33,15 @@
 
 /* Footer.module.css */
 
+/* Footer Styles */
 .footer {
     position: relative;
     bottom: 0;
     padding: 20px 0;
     width: 100%;
-    background-color: #0F5F53CC; /* Match the navbar background color */
+    background-color: #0F5F53CC;
     color: #fff;
 }
-
-
 
 .container {
     display: flex;
@@ -51,22 +50,18 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-
 }
 
-/*.logo img {
-    !*max-width: 1000px;*!
-    size: 5000px;
-}*/
 .logo {
     position: absolute;
     right: 5px;
     top: 12px;
-    height: 24px;
+    height: 24px; /* Adjust the height as needed */
 }
 
 .logo img {
-    size: 5000px;
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto;
 }
 
 .newsletter {
@@ -78,12 +73,7 @@
 .newsletter h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff; /* Text color matches navbar */
-}
-
-.newsletter p {
-    font-size: 14px;
-    color: #fff; /* Text color matches navbar */
+    color: #fff;
 }
 
 .newsletter form {
@@ -101,7 +91,7 @@
 }
 
 .newsletter button {
-    background-color: #ff5733; /* A color that complements the navbar color */
+    background-color: #ff5733;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -117,7 +107,7 @@
 .socialMedia h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff; /* Text color matches navbar */
+    color: #fff;
 }
 
 .socialIcons {
@@ -134,23 +124,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 150px;
-    right: 5px;
-    top: 12px;
-    height: 24px;
-
+    margin-top: 20px; /* Adjust margin as needed */
 }
 
 .footerLinks a {
     text-decoration: none;
-    color: #333; /* Adjust the color to match your design */
+    color: #fff; /* Adjust the color to match your design */
     margin-right: 20px; /* Adjust the spacing between links */
     font-size: 14px;
 }
 
 .footerLinks p {
-    color: #555; /* You can use a slightly different color for the text */
+    color: #fff;
     font-size: 14px;
     margin-top: 10px; /* Adjust the spacing between the links and text */
 }
+
 /* Add additional styling for social media icons if needed */
