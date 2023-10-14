@@ -28,6 +28,7 @@ const Carte = () => {
             
             <Button 
         label ="PLUS D'INFO"
+        link = '/services'
         />
         </div>
       <MapContainer className={styles.leafletcontainer} center={center} zoom={ZOOM_LEVEL}>

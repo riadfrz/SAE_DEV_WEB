@@ -5,7 +5,9 @@ import imgCarte2 from '../../images/CarteActu2.png';
 import imgCarte3 from '../../images/CarteActu3.png';
 import Card from './Card';
 import Button from'./Button';
+import { Link } from 'react-router-dom';
 const Actu = () => {
+  
   return (
     <div className={styles.actu}>
               <div className={styles.heading}>
@@ -14,27 +16,31 @@ const Actu = () => {
         </div>
 
       </div>
-      
+
       <div className={styles.container}>
       <Card
               image={imgCarte1}
               title=' Journal Grands Projets #01 : l ouverture de la rivière de Morlaix'
               text='Avec son nouveau journal Grands Projets, Morlaix Communauté informe les habitants au plus près...'
+              link='/services'
             />
       <Card
               image={imgCarte2}
               title='Prime achat Vélo à Assistance Electrique (VAE) 2023'
               text='Achetez un vélo électrique, en 2023, Morlaix Communauté vous accompagne !'
+              link='/services'
             />
-      <Card
+       <Card
               image={imgCarte3}
               title='Le défi des foyers presque zéro déchet : prêt à relever le défi ?'
               text='La nouvelle session du défi des foyers presque zéro déchet approche...'
+              link='/services'
             />
        
         </div>
         <Button 
         label ='VOIR PLUS'
+        link='/services'
         />
         </div>
     

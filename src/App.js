@@ -8,10 +8,13 @@ import Event from './components/event/ImageSlider'
 import { SliderData } from './components/event/SliderData';
 import Footer from './components/footer/Footer'
 
+
+
+
 function App() {
   return (
     <div>
-      
+       
       <Navbar />
       <Hero />
       <Actu />

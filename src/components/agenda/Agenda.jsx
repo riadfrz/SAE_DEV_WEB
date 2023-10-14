@@ -28,7 +28,11 @@ const Agenda = () => {
           navigation
           breakpoints={{    
          
-            400: {
+            200: {
+              
+              slidesPerView: 1,
+            },
+            600: {
               
               slidesPerView: 2,
             },
@@ -50,98 +54,130 @@ const Agenda = () => {
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
              image={imgCarteAgenda}
+             date = '19/07'
              make='test'
+             link='/services'
             />
           </SwiperSlide>
 
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
-              make='test'
+              date = '19/07'
+              make='test' 
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
+              date = '19/07'
               make='test'
+              link='/services'
             />
           </SwiperSlide>
           

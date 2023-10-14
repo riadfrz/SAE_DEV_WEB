@@ -18,6 +18,18 @@
     color:#FF5480 ;
   }
 
+  .image {
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    transform-origin: center bottom; 
+   
+  }
+  
+  .image:hover {
+    transform: scale(1.05); 
+    
+  }
 
 .slider {
     position: relative;
@@ -25,6 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   
 
@@ -88,6 +101,7 @@
         top: 80%;
         right: 5rem;
         font-size: 2rem;
+        opacity : 0.3;
       }
       
       .leftarrow {
@@ -95,6 +109,7 @@
         top: 80%;
         left: 5rem;
         font-size: 2rem;
+        opacity : 0.3;
         
       }
 }

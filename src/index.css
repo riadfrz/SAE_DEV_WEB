@@ -1,21 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;600;700;800&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
-ul {
-  list-style-type: none;
+.home,
+.services,
+.products,
+.contact-us,
+.sign-up,
+.marketing,
+.consulting {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 
-a {
-  text-decoration: none;
+.home {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
 }
 
-body {
-  font-size: 1.2rem;
-  line-height: 1.3;
-  font-family: 'Poppins', sans-serif;
+.services {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
 }
+
+.products {
+
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.contact-us {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.marketing {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.consulting {
+
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+
+
