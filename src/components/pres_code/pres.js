@@ -7,13 +7,22 @@ import classes from './Presentation.module.css';
 /* @figmaId 27:2 */
 const Presentation = () => {
     return (
-        <div className={`${resets.storybrainResets} ${classes.root}`}>
+        
+        <div className={classes.heading}>
+        
+
             <div className={classes.image_processing20221115238301}>
                 <div className={classes.presentation}>Présentation</div>
             </div>
+            
             {/*<div className={classes.rectangle14}></div>*/}
             {/*<div className={classes.presentation}>Présentation</div>*/}
-            <div className={classes.quiSommeNous}>Qui Somme nous?</div>
+            <div className={classes.textBlock}>Qui Somme nous?</div>
+            <div className={classes.test}>
+                    Depuis le 12 avril 2021, le Bureau Communautaire de Morlaix Communauté a connu une évolution majeure.
+                    Initialement composé du président, des 11 vice-présidents, des 10 conseillers délégués et d&#39;un conseiller
+                    spécial, il a été étendu pour inclure les maires des 26 communes n&#39;occupant pas ces fonctions.
+                </div>
             <div className={classes.leConseilDeCommunaute}>
                 <div className={classes.textBlock}>Le conseil de communauté</div>
                 <div className={classes.test}>
@@ -30,11 +39,7 @@ const Presentation = () => {
                 <div className={classes.test}>
                     <p></p>
                 </div>
-                <div className={classes.test}>
-                    Depuis le 12 avril 2021, le Bureau Communautaire de Morlaix Communauté a connu une évolution majeure.
-                    Initialement composé du président, des 11 vice-présidents, des 10 conseillers délégués et d&#39;un conseiller
-                    spécial, il a été étendu pour inclure les maires des 26 communes n&#39;occupant pas ces fonctions.
-                </div>
+               
                 <div className={classes.test}>
                     <p></p>
                 </div>
@@ -117,7 +122,8 @@ const Presentation = () => {
             <div className={classes.rectangle24}></div>
             <div className={classes.rectangle22}></div>
             <div className={classes.rectangle23}></div>
-        </div>
-    );
+     </div>    
+    )
+    
 };
 export default Presentation;
