@@ -1,14 +1,11 @@
 
 import {memo, React} from 'react';
-import type { FC } from 'react';
 import resets from '../_resets.module.css';
 import classes from './Presentation.module.css';
 
-interface Props {
-    className?: string;
-}
+
 /* @figmaId 27:2 */
-export const Pres: FC<Props> = memo(function Presentation(props = {}) {
+const Presentation = () => {
     return (
         <div className={`${resets.storybrainResets} ${classes.root}`}>
             <div className={classes.image_processing20221115238301}>
@@ -122,4 +119,5 @@ export const Pres: FC<Props> = memo(function Presentation(props = {}) {
             <div className={classes.rectangle23}></div>
         </div>
     );
-});
+};
+export default Presentation;
