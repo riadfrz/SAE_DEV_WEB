@@ -20,7 +20,7 @@ const Navbar = () => {
       label: "Communauté",
       dropdownContent: [
         { title: "Présentation", path: "/Presentation" },
-        { title: "Histoire", path: "/consulting" },
+        { title: "Histoire", path: "/Immobillier" },
         { title: "Les compétences", path: "/item3" },
         { title: "Les élus", path: "/item4" },
         { title: "Les services", path: "/item2" },

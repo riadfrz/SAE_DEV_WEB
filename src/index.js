@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+
 import Presentation from './Pages/Presentation';
 import Services from './Pages/Services';
 import Etudier from './Pages/Etudier';
+import Immobillier from './Pages/Immobillier';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -26,11 +28,16 @@ const router = createBrowserRouter([
       path: '/services',
       element: <Services/>,
     },
-   
+    
     {
         path: '/Etudier',
         element: <Etudier/>,
     },
+
+    {
+      path: '/Immobillier',
+      element: <Immobillier/>,
+  },
 ]);
 
 
