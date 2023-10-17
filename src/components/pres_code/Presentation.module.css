@@ -10,7 +10,9 @@
     overflow: hidden;
     ;
 }
-.image_processing20221115238301 {
+
+
+.image {
     position: relative;
     background: url('../../../public/image_processing20221115238301.jpg')  no-repeat center/cover;
     width: 100%;
@@ -18,25 +20,20 @@
     display: flex;
     margin-bottom: 100px;
 }
-.image_processing20221115238301 :hover{
+.image :hover{
     transform: scale(1.05);
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
-.TextBlock {
-  right: 100px;
-}
+
 .presentation {
     margin: 350px auto auto;
     text-align: center;
-
     color: #FFD581;
     font-family: Montserrat, serif;
     font-size: 80px;
 }
 
-.heading {
-    text-align: left;
-}
+
 .Title {
     color: #0f5f53;
     font-size: 50px;
@@ -47,6 +44,7 @@
     letter-spacing: -0.15px;
     margin-left: 200px;
 }
+
 .Text{
     margin: 0 300px 100px;
     color: #000;
@@ -75,3 +73,134 @@
     height: 200px;
     background-color: #000;
 }*/
+
+@media screen and (max-width: 768px) {
+    .root {
+        height: auto; /* Adjust the height as needed for smaller screens */
+    }
+
+    .image {
+        height: 300px; /* Adjust the image height for smaller screens */
+        margin-bottom: 50px; /* Adjust the margin for smaller screens */
+    }
+
+    .presentation {
+        margin: 100px auto auto;
+        font-size: 50px; /* Adjust font size for smaller screens */
+    }
+
+    .Title {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .Text {
+        margin: 0 50px 50px; /* Adjust margins for smaller screens */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .rectangle {
+        left: 0; /* Reset positioning for smaller screens */
+        width: 100%; /* Adjust the width to full width for smaller screens */
+        margin-left: 0; /* Reset margin for smaller screens */
+        margin-bottom: 50px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .root {
+        height: 7000px; /* Adjust the height as needed for larger screens */
+    }
+
+    .image {
+        height: 700px; /* Adjust the image height for larger screens */
+        margin-bottom: 150px; /* Adjust the margin for larger screens */
+    }
+
+    .presentation {
+        margin: 450px auto auto;
+        font-size: 100px; /* Adjust font size for larger screens */
+    }
+
+    .Title {
+        margin-left: 300px; /* Adjust margin for larger screens */
+    }
+
+    .Text {
+        margin: 0 400px 150px; /* Adjust margins for larger screens */
+        font-size: 36px; /* Adjust font size for larger screens */
+    }
+
+    .rectangle {
+        left: 200px; /* Adjust positioning for larger screens */
+        width: 100%; /* Adjust the width to full width for larger screens */
+        margin-left: 0; /* Reset margin for larger screens */
+        margin-bottom: 150px; /* Adjust margin for larger screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .root {
+        height: auto; /* Adjust the height as needed for smaller screens */
+    }
+
+    .image {
+        height: 300px; /* Adjust the image height for smaller screens */
+        margin-bottom: 30px; /* Adjust the margin for smaller screens */
+    }
+
+    .presentation {
+        margin: 50px auto auto;
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .Title {
+        margin-left: 0; /* Reset margin for smaller screens */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .Text {
+        margin: 0 20px 30px; /* Adjust margins for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .rectangle {
+        left: 0; /* Reset positioning for smaller screens */
+        width: 100%; /* Adjust the width to full width for smaller screens */
+        margin-left: 0; /* Reset margin for smaller screens */
+        margin-bottom: 30px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Responsive styles for screens with a minimum width of 1024px */
+@media screen and (min-width: 1024px) {
+    .root {
+        height: 6000px; /* Adjust the height as needed for larger screens */
+    }
+
+    .image {
+        height: 600px; /* Adjust the image height for larger screens */
+        margin-bottom: 120px; /* Adjust the margin for larger screens */
+    }
+
+    .presentation {
+        margin: 400px auto auto;
+        font-size: 90px; /* Adjust font size for larger screens */
+    }
+
+    .Title {
+        margin-left: 300px; /* Adjust margin for larger screens */
+        font-size: 60px; /* Adjust font size for larger screens */
+    }
+
+    .Text {
+        margin: 0 400px 150px; /* Adjust margins for larger screens */
+        font-size: 40px; /* Adjust font size for larger screens */
+    }
+
+    .rectangle {
+        left: 200px; /* Adjust positioning for larger screens */
+        width: 100%; /* Adjust the width to full width for larger screens */
+        margin-left: 0; /* Reset margin for larger screens */
+        margin-bottom: 150px; /* Adjust margin for larger screens */
+    }
+}

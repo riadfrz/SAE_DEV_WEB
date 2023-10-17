@@ -9,7 +9,7 @@ const Presentation = () => {
     return (
         
         <div className={classes.heading}>
-            <div className={classes.image_processing20221115238301}>
+            <div className={classes.image}>
                 <div className={classes.presentation}>Présentation</div>
             </div>
             <div className={classes.TextBlock}>
