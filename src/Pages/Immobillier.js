@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import immo from "../components/immobillier/immo";
+import Immo from "../components/immobillier/Immo";
 
 import React from "react";
 
@@ -9,7 +9,7 @@ function Immobillier() {
         <div>
 
             <Navbar />
-            <immo />
+            <Immo />
             <Footer />
         </div>
     );

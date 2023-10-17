@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import styles from './immo.module.css';
-import Button from './Button';
+import Button from './Boutton'
 
-const immo = () => {
+const Immo = () => {
   const [texteCase1, setTexteCase1] = useState('');
   const [texteCase2, setTexteCase2] = useState('');
   const [selectedOption, setSelectedOption] = useState('Tous'); // Par défaut, "Tous" est sélectionné
-
   const handleOptionChange = (option) => {
     setSelectedOption(option);
   };
@@ -86,4 +85,4 @@ const immo = () => {
   );
 };
 
-export default immo;
+export default Immo;
