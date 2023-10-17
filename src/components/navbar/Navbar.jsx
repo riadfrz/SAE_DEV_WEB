@@ -12,7 +12,7 @@ const Navbar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [click, setClick] = useState(false);
   const [activeDropdownIndex, setActiveDropdownIndex] = useState(null);
-
+  const [click2, setClick2] = useState(false);
 
 
   const navItems = [
@@ -114,7 +114,21 @@ const Navbar = () => {
     setClick(!click);
     setActiveDropdownIndex(activeDropdownIndex === index ? null : index);
   };
-
+  const handleItemClick2 = (index) => {
+    // Toggle the click state
+    setClick2(!click2);
+    
+    // Close the dropdown if it's already open (clicked on the same menu item)
+    if (DropCheck === index) {
+      setDropCheck(null);
+    } else {
+      // Set the active dropdown index only if it's a new menu item click
+      setDropCheck(index);
+    }
+  
+    setActiveDropdownIndex(activeDropdownIndex === index ? null : index);
+  };
+  
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -161,7 +175,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 <div
-              className='nav-links' onClick={() => DropdownCheck(index)} >
+              className='nav-links' onClick={() => handleItemClick2(index)} >
               {item.label} 
               {DropCheck === index && <Dropdown dropdownContent={item.dropdownContent} />}
             </div>

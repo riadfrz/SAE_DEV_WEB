@@ -6,7 +6,6 @@ function Dropdown({ dropdownContent }) {
   const [click, setClick] = useState(false);
   const dropdownRef = useRef(null);
 
-  const handleClick = () => setClick(!click);
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
