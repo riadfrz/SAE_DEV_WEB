@@ -89,6 +89,7 @@ const Presentation = () => {
                         instances délibératives, jouant ainsi un rôle essentiel dans le processus décisionnel de Morlaix Communauté.
                 </div>
             </div>
+            <div className={classes.EndPage}></div>
      </div>
     )
 };
