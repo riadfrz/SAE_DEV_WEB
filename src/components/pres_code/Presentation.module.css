@@ -10,37 +10,62 @@
     overflow: hidden;
     ;
 }
+.image_processing20221115238301 {
+    position: relative;
+    background: url('../../../public/image_processing20221115238301.jpg')  no-repeat center/cover;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.image_processing20221115238301 :hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.TextBlock {
+  right: 100px;
+}
+.presentation {
+    margin: 350px auto auto;
+    text-align: center;
+
+    color: #FFD581;
+    font-family: Montserrat, serif;
+    font-size: 80px;
+}
 
 .heading {
     text-align: left;
+}
+.Title {
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    margin-left: 200px;
+}
+.Text{
+    margin: 0 300px 100px;
+    color: #000;
+    font-size: 30px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    align-items: center;
+}
 
+.rectangle{
+    left: 150px;
+    width: 938px;
+    height: 21px;
+    border-radius: 14px;
+    background-color: #ec66a1;
+    margin-left: 170px;
+    margin-bottom: 100px;
 
 }
-.textBlock {
-    text-align: left;
-    font-size: 5rem;
-    color: red;
-
-}
-.quiSommeNous {
-   
-
-}
-.actu {
-    max-width: 100%;
-    margin: auto;
-    height:54.375rem ;
-    background-color: #0F5F53CC;
-   
-  }
-  .heading h1 {
-    font-size: 3rem;
-    text-align: center;
-   
-    padding-top: 5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-  
-    color:#FFD581 ;
-  }
