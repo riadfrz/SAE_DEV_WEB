@@ -10,6 +10,39 @@
     overflow: hidden;
     ;
 }
+.image_processing20221115238301 {
+    /*background: url('../../../public/image_processing20221115238301.jpg') no-repeat center/cover;
+    width: 100%;
+    max-height: 550px;*/
+
+    position: relative;
+    background: url('../../../public/image_processing20221115238301.jpg')  no-repeat center/cover;
+    width: 60%;
+    height: 550px;
+    display: flex;
+}
+.image_processing20221115238301 :hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.textBlock :hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.presentation {
+    /*margin-top: 2rem;
+    text-align: center;
+    color: #FFD581;
+    font-family: Montserrat, serif;
+    font-size: 3rem;*/
+
+    margin: 15rem auto auto;
+    text-align: center;
+
+    color: #FFD581;
+    font-family: Montserrat, serif;
+    font-size: 80px;
+}
 
 .heading {
     text-align: left;
@@ -17,10 +50,13 @@
 
 }
 .textBlock {
-    text-align: left;
-    font-size: 5rem;
-    color: red;
-
+    color: #0f5f53;
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
 }
 .quiSommeNous {
    
@@ -44,3 +80,24 @@
   
     color:#FFD581 ;
   }
+
+.test{
+
+    margin-top: 0;
+    color: #000;
+    font-size: 25px;
+    line-height: 58px;
+    font-weight: bold;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+    letter-spacing: -0.15px;
+    align-items: center;
+}
+
+.rectangle{
+    left: 150px;
+    width: 938px;
+    height: 21px;
+    border-radius: 14px;
+    background-color: #ec66a1;
+}
