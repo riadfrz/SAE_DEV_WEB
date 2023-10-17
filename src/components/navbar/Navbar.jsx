@@ -13,20 +13,6 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const [activeDropdownIndex, setActiveDropdownIndex] = useState(null);
 
-  const initialItems = [
-    { id: 1, name: 'Apple' },
-    { id: 2, name: 'Banana' },
-    { id: 3, name: 'Orange' },
-    { id: 4, name: 'Mango' },
-    // Add more items as needed
-  ];
-
-  const [searchResults, setSearchResults] = useState([]);
-
-  const handleSearch = (filteredItems) => {
-    setSearchResults(filteredItems);
-  };
-
 
 
   const navItems = [
@@ -149,9 +135,15 @@ const Navbar = () => {
     setValue(searchTerm);
     console.log("search ", searchTerm);
   };
+  const [DropCheck, setDropCheck] = useState(null);
+  const DropdownCheck= (index) => {
+    setDropCheck(index);
+  };
+  
 
+  
   return (
-    <>
+ 
       <nav className='navbar'>
         <Link to='/' className='navbar-logo'>
           <img className='img' src={Logo} alt='Logo' style={{ width: '180px', height: '100px' }}/>
@@ -159,7 +151,7 @@ const Navbar = () => {
         <div className='menu-icon' onClick={() => setClick(!click)}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+        <ul className={(click )? 'nav-menu active' : 'nav-menu'}>
           {navItems.map((item, index) => (
             <li key={index} className='nav-item'>
               {windowWidth > 1200 ? (
@@ -168,57 +160,52 @@ const Navbar = () => {
                   {activeDropdownIndex === index && <Dropdown dropdownContent={item.dropdownContent} />}
                 </div>
               ) : (
-                <Link to="/services" className='nav-links' onClick={() => handleItemClick(index)}>
-                  {item.label} 
-                </Link>
+                <div
+              className='nav-links' onClick={() => DropdownCheck(index)} >
+              {item.label} 
+              {DropCheck === index && <Dropdown dropdownContent={item.dropdownContent} />}
+            </div>
+
+               
               )}
             </li>
           ))}
           
-      <div className="wrapper">
-        <div className="search-container">
-        <div className="search-inner">
-          <input type="text" placeholder='rechercher...' value={value} onChange={onChange} />
-          
-        </div>
-        <div className="dropdown">
-          {data
-            .filter((item) => {
-              const searchTerm = value.toLowerCase();
-              const fullName = item.full_name.toLowerCase();
-
-              return (
-                searchTerm &&
-                fullName.startsWith(searchTerm) &&
-                fullName !== searchTerm
-              );
-            })
-            .slice(0, 10)
-            .map((item) => (
-              <Link to={`./services/`} style={{textDecoration: 'none'}} key={item.full_name}>  {/* ./${item.full_name}  */}
-            <div
-              className="dropdown-row"
-              onClick={() => onSearch(item.full_name)}
-            >
-              {item.full_name}
+          <div className="wrapper">
+            <div className="search-container">
+            <div className="search-inner">
+              <input type="text" placeholder='Rechercher...' value={value} onChange={onChange} />
+              
             </div>
-          </Link>
-            ))}
-        </div>
-      </div>
-      </div>
-        
+            <div className="dropdown">
+              {data
+                .filter((item) => {
+                  const searchTerm = value.toLowerCase();
+                  const fullName = item.full_name.toLowerCase();
 
-
-      
-
-   
-        </ul>
-        
-     
-       
+                  return (
+                    searchTerm &&
+                    fullName.startsWith(searchTerm) &&
+                    fullName !== searchTerm
+                  );
+                })
+                .slice(0, 10)
+                .map((item) => (
+                  <Link to={`./services`} style={{textDecoration: 'none'}} key={item.full_name}>  {/* ./${item.full_name}  */}
+                <div
+                  className="dropdown-row"
+                  onClick={() => onSearch(item.full_name)}
+                >
+                  {item.full_name}
+                </div>
+              </Link>
+                ))}
+            </div>
+          </div>
+          </div> 
+       </ul>
       </nav>
-    </>
+   
   );
 }
 
