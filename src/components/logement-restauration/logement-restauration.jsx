@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './logement-restauration.module.css';
 import Card from './Card';
-import imgCarteAgenda from '../../images/cafet.jpg';
-import imgCarteAgenda2 from '../../images/Ty Dour.png';
-import imgCarteAgenda3 from '../../images/auberge.jpg';
-import imgCarteAgenda4 from '../../images/Menguen.png';
+import imgCarteAgenda from '../../../mohab étudier code/src/images/cafet.jpg';
+import imgCarteAgenda2 from '../../../mohab étudier code/src/images/Ty Dour.png';
+import imgCarteAgenda3 from '../../../mohab étudier code/src/images/auberge.jpg';
+import imgCarteAgenda4 from '../../../mohab étudier code/src/images/Menguen.png';
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';

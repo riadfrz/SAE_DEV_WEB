@@ -1,17 +1,31 @@
-import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
+import React from 'react'
+import Navbar from '../components/navbar/Navbar'
+import Hero from '../components/hero/Hero'
+import LogementRestauration from '../../src/components/logement-restauration/logement-restauration'
+import Carte from '../components/Carte/carte'
+import Formations from '../../src/components/formations/formations'
+import Event from '../../src/components/aides/ImageSlider'
+import { SliderData } from '../components/aides/SliderData';
+import Footer from '../components/footer/Footer'
+import Etudiant from '../../src/components/etudiant/etudiant'
 
-import React from "react";
+
 
 function Etudier() {
     return (
         <div>
+
             <Navbar />
-            <h1>etudier</h1>
+            <Hero />
+            <Formations/>
+            <Etudiant />
+            <Event slides={SliderData} />
+            <LogementRestauration />
+            <Carte />
             <Footer />
+
         </div>
     );
 }
 
 export default Etudier;
-

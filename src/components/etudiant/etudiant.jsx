@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './etudiant.module.css';
-import Drive from '../../images/etudiant.jpg'
+import Drive from '../../../mohab étudier code/src/images/etudiant.jpg'
 
 const Etudiant = () => {
   return (

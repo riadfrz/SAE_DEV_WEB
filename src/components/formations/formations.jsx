@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './Actu.module.css'
-import imgCarte1 from '../../images/enseignement.jpg';
-import imgCarte2 from '../../images/pro.png';
-import imgCarte3 from '../../images/prepa.jpg';
+import imgCarte1 from '../../../mohab étudier code/src/images/enseignement.jpg';
+import imgCarte2 from '../../../mohab étudier code/src/images/pro.png';
+import imgCarte3 from '../../../mohab étudier code/src/images/prepa.jpg';
 import Card from './Card';
-import Button from'./Button';
+import Button from './Button';
 import { Link } from 'react-router-dom';
 const Formations = () => {
   
