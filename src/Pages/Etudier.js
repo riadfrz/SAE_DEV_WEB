@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar'
-import Hero from '../components/hero/Hero'
+import Header from '../components/header/Header'
 import LogementRestauration from '../../src/components/logement-restauration/logement-restauration'
 import Carte from '../components/carte/carte'
 import Formations from '../../src/components/formations/formations'
@@ -16,7 +16,7 @@ function Etudier() {
         <div>
 
             <Navbar />
-            <Hero />
+            <Header />
             <Formations/>
             <Etudiant />
             <Event slides={SliderData} />
