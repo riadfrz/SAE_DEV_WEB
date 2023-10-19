@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar'
-import Header from '../components/header/Header'
+import Header from '../../src/components/header/header'
 import LogementRestauration from '../../src/components/logement-restauration/logement-restauration'
 import Carte from '../components/carte/carte'
 import Formations from '../../src/components/formations/formations'

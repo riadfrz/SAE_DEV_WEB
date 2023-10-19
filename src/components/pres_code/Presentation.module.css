@@ -43,6 +43,7 @@
     'Liberation Sans', sans-serif;
     letter-spacing: -0.15px;
     margin-left: 200px;
+
 }
 
 .Text{
@@ -58,7 +59,7 @@
     text-indent: 1em;
 }
 
-.rectangle{
+/*.rectangle{
     left: 150px;
     width: 938px;
     height: 21px;
@@ -66,7 +67,7 @@
     background-color: #ec66a1;
     margin-left: 170px;
     margin-bottom: 100px;
-}
+}*/
 
 /*.EndPage{
     left: 150px;
@@ -94,14 +95,12 @@
     }
 
     .Title {
-        margin-left: 100px; /* Reset margin for smaller screens */
+        font-size: 24px;
     }
 
     .Text {
         margin: 50px 50px; /* Adjust margins for smaller screens */
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 15px; /* Adjust font size for smaller screens */
     }
-
-
 }
 
