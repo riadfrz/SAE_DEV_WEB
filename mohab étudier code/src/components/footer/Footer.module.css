@@ -1,0 +1,126 @@
+/*
+.footer {
+    position: relative;
+    bottom: 0;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #0F5F53CC;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}*/
+
+.footer {
+    position: relative;
+    bottom: 0;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #0F5F53CC;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%; /* Set the height to 100% */
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    position: relative;
+    height: 24px; /* Adjust the height as needed */
+    margin-right: 20px;
+}
+
+.logo img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto;
+}
+
+.newsletter {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 200px;
+    margin-left: 50px;
+}
+
+.newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.newsletter button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.socialMedia {
+    flex: 1;
+    margin-left: 50px;
+
+}
+
+.socialMedia h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.socialIcons {
+    font-size: 24px;
+}
+
+.socialIcons a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px; /* Adjust margin as needed */
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #fff; /* Adjust the color to match your design */
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+
+/* Add additional styling for social media icons if needed */

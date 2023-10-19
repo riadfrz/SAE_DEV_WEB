@@ -1,0 +1,63 @@
+.driver {
+    max-width: 1040px;
+    margin: auto;
+    padding:  5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+
+.driver img {
+    max-width: 800px;
+}
+
+
+.driver h2 {
+    padding-top: 20%;
+}
+
+.driver span {
+    color: #0F5F53;
+}
+
+.driver p {
+    font-size: 1.75rem;
+    color: #333;
+    padding: 1rem 0;
+    border: none;
+}
+
+.driver button {
+    background-color: #EC66A1;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 12px 18px;
+    border: none;
+}
+
+.driver button:hover {
+    background-color: #FF007F;
+    transition: background-color 1s;
+}
+
+@media screen and (max-width: 1220px) {
+    .driver {
+        grid-template-columns: 1fr;
+    }
+
+    .driver img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .driver .left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .driver h2 {
+        padding-top: 10%;
+    }
+}

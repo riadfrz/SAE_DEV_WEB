@@ -1,0 +1,162 @@
+.actu {
+  max-width: 100%;
+  margin: auto;
+  height:54.375rem ;
+  background-color: #0F5F53CC;
+ 
+}
+.heading h1 {
+  font-size: 3rem;
+  text-align: center;
+ 
+  padding-top: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+
+  color:#FFD581 ;
+}
+
+.actu .container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+
+
+}
+
+.card {
+ 
+  width: 70%; 
+  margin-top:5rem;
+  border-radius: 10px;
+  background:#fff;
+  border:1rem white solid;
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    transform-origin: center bottom; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0);
+}
+
+.card:hover{
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2); 
+
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border:1rem white ;
+  padding: 10px;
+
+  object-fit: cover;
+}
+.card h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 0.5rem;
+  background-color: white;
+  color:#FF5480;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maximum number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card p {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color:#9B9B9B;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Maximum number of lines to display */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin-top: 50px;
+}
+.button {
+  background-color: #EC66A1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  padding: 2rem 3rem;
+  cursor: pointer;
+  border-radius: 8rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #EC66A1CC;
+}
+
+.button:active {
+  background-color: #004080;
+}
+@media screen and (max-width: 600px) {
+
+  .actu {
+  
+    height:auto ;
+    
+   
+  }
+  .actu .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .actu {
+  
+    height:auto ;
+    
+   
+  }
+  .actu .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .heading h1 {
+    font-size: 1.5rem;
+  
+  }
+  .card h3{
+  
+    font-size: 1rem;
+
+  }
+  .card p {
+  
+    font-size: 0.8rem;
+
+  }
+  .button {
+
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    
+  }
+}
+
+
