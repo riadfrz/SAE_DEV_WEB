@@ -42,7 +42,7 @@
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-.presentation {
+.MainTitle{
     margin: 350px auto auto;
     text-align: center;
     color: #FFD581;
@@ -53,41 +53,41 @@
 
 .Title {
     color: #0f5f53;
-    font-size: 50px;
+    font-size: 35px;
     line-height: 58px;
     font-weight: bold;
     font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
     letter-spacing: -0.15px;
-    margin-left: 200px;
+    margin-top: 50px;
+    text-align: center;
+
 
 }
 
 .Text{
-    margin: 0 300px 100px;
-    color: #000;
-    font-size: 30px;
+    margin: 0 100px 10px;
+    font-size: 20px;
     line-height: 58px;
     font-weight: bold;
     font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
     letter-spacing: -0.15px;
     align-items: center;
-    text-indent: 1em;
 }
 .TextBlock{
 
 }
 
-/*.rectangle{
-    left: 150px;
-    width: 938px;
-    height: 21px;
+.rectangle{
+    width: 40%;
+    height: 5px;
     border-radius: 14px;
     background-color: #ec66a1;
-    margin-left: 170px;
-    margin-bottom: 100px;
-}*/
+    margin-bottom: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 
 /*.EndPage{
     left: 150px;
@@ -96,7 +96,7 @@
     background-color: #000;
 }*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .root {
         height: auto; /* Adjust the height as needed for smaller screens */
     }
@@ -109,21 +109,35 @@
         margin-bottom: 50px; /* Adjust the margin for smaller screens */
     }
 
-    .presentation {
+    .MainTitle {
         margin: 100px auto auto;
-        font-size: 50px; /* Adjust font size for smaller screens */
+        font-size: 40px; /* Adjust font size for smaller screens */
     }
 
     .Title {
-        font-size: 24px;
+        font-size: 17px;
         line-height: 28px;
-        margin-left: 0px;
+
     }
 
     .Text {
-        margin: 50px 50px; /* Adjust margins for smaller screens */
-        font-size: 15px; /* Adjust font size for smaller screens */
-
+        font-size: 10px;
+        line-height: 35px;
+        font-weight: bold;
+        font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
+        letter-spacing: -0.15px;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
     }
+
+}
+@media screen and (max-width: 1024px) {
+    .root {
+        height: auto; /* Adjust the height as needed for smaller screens */
+    }
+
+
 }
 

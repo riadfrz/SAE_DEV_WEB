@@ -3,13 +3,15 @@ import React from 'react';
 import classes from './Presentation.module.css';
 
 
+
+
 /* @figmaId 27:2 */
 const Presentation = () => {
     return (
         
         <div >
             <div className={classes.image}>
-                <div className={classes.presentation}>Présentation</div>
+                <div className={classes.MainTitle}>Présentation</div>
             </div>
             <div className={classes.TextBlock}>
                 <div className={classes.Title}>Qui Somme nous?</div>
