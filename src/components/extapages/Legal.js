@@ -8,7 +8,7 @@ const Legal = () => {
     return (
 
         <div className={classes.heading}>
-            <div className={classes.image_dp}>
+            <div className={classes.image_leg}>
                 <div className={classes.MainTitle}>Mentions légales</div>
             </div>
             <div className={classes.Title}>Informations légales</div>
@@ -96,7 +96,7 @@ const Legal = () => {
                 <div className={classes.rectangle}></div>
                 <div className={classes.Text}>Utilisateur : Internaute se connectant, utilisant le site susnommé.</div>
                 <div className={classes.Text}>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</div>
-            </div>
+                </div>
 
             <div className={classes.EndPage}></div>
         </div>
