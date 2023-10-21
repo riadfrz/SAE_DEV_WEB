@@ -11,7 +11,6 @@ const Legal = () => {
             <div className={classes.image_dp}>
                 <div className={classes.MainTitle}>Mentions légales</div>
             </div>
-
             <div className={classes.Title}>Informations légales</div>
             <div className={classes.TextBlock}>
                 <div className={classes.Title}>1. Présentation du site</div>
