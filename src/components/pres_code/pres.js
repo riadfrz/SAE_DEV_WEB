@@ -1,6 +1,5 @@
 
-import {memo, React} from 'react';
-import resets from '../_resets.module.css';
+import React from 'react';
 import classes from './Presentation.module.css';
 
 
@@ -8,7 +7,7 @@ import classes from './Presentation.module.css';
 const Presentation = () => {
     return (
         
-        <div className={classes.heading}>
+        <div >
             <div className={classes.image}>
                 <div className={classes.presentation}>Présentation</div>
             </div>

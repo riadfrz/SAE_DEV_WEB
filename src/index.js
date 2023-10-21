@@ -8,6 +8,8 @@ import Presentation from './Pages/Presentation';
 import Services from './Pages/Services';
 import Etudier from './Pages/Etudier';
 import Immobillier from './Pages/Immobillier';
+import Dpers from './Pages/Donnéespers';
+import Leg from './Pages/Legal';
 import {
     createBrowserRouter,
     RouterProvider,
@@ -38,6 +40,18 @@ const router = createBrowserRouter([
       path: '/Immobillier',
       element: <Immobillier/>,
   },
+    {
+        path: "/",
+        element: <App/>,
+    },
+    {
+        path: "/Donnéespers",
+        element: <Dpers/>,
+    },
+    {
+        path: "/Legal",
+        element: <Leg/>,
+    },
 ]);
 
 

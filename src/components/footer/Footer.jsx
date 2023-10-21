@@ -60,9 +60,9 @@ const Footer = () => {
                     </form>
                 </div>
                 <div className={styles.footerLinks}>
-                    <a href="/">Données personnelles</a>
+                    <a href="Donnéespers">Données personnelles</a>
                     <a href="https://www.demarches-simplifiees.fr/commencer/4b2693bc-0e68-4050-81f7-7c6cfb080038">Formulaire de contact</a>
-                    <a href="/">Mentions légales</a>
+                    <a href="/Legal">Mentions légales</a>
                     <a href="https://zip.fr/">Réalisation : Evernet</a>
                 </div>
             </div>
