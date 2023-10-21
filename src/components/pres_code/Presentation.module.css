@@ -38,8 +38,9 @@
 }
 
 .image :hover{
-    transform: scale(1.05);
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    transform: scale(2);
+    transition: all 0.5s; /* Animation */
+
 }
 
 .MainTitle{
@@ -61,7 +62,6 @@
     letter-spacing: -0.15px;
     margin-top: 50px;
     text-align: center;
-
 }
 
 .Text{
@@ -74,9 +74,13 @@
     letter-spacing: -0.15px;
     align-items: center;
 }
-.TextBlock{
+.TitleH :hover{
+
+    font-size: 50px; /* Adjust the size as desired */
+    transition: all 0.5s; /* Animation */
 
 }
+
 
 .rectangle{
     width: 40%;
@@ -130,13 +134,21 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+    .image :hover{
+        transform: scale(1.15);
+        transition: all 0.5s; /* Animation */
+    }
+    .TitleH :hover{
+        font-size: 25px; /* Adjust the size as desired */
+    }
 
 }
 @media screen and (max-width: 1024px) {
     .root {
         height: auto; /* Adjust the height as needed for smaller screens */
     }
-
+    .image :hover{
+    }
 
 }
 
