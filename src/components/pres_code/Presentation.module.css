@@ -14,7 +14,7 @@
 
 .image{
     position: relative;
-    background: url('../../../public/image_processing20221115238301.jpg')  no-repeat center/cover;
+    background: url('../../images/pres2.jpg')  no-repeat center/cover;
     width: 100%;
     height: 550px;
     display: flex;
@@ -22,7 +22,7 @@
 }
 .image_dp{
     position: relative;
-    background: url('../../../public/image_processing20221115238301.jpg')  no-repeat center/cover;
+    background: url('../../images/DP2.jpg')  no-repeat center/cover;
     width: 100%;
     height: 550px;
     display: flex;
@@ -30,7 +30,7 @@
 }
 .image_leg{
     position: relative;
-    background: url('../../images/mention-legale-site-web.jpg')  no-repeat center/cover;
+    background: url('../../images/ML2.jpg')  no-repeat center/cover;
     width: 100%;
     height: 550px;
     display: flex;
@@ -44,11 +44,13 @@
 }
 
 .MainTitle{
-    margin: 350px auto auto;
+    margin: auto;
+    margin-top: 26rem;
     text-align: center;
+
     color: #FFD581;
     font-family: Montserrat, serif;
-    font-size: 80px;
+    font-size: 4rem;
 }
 
 
@@ -62,6 +64,8 @@
     letter-spacing: -0.15px;
     margin-top: 50px;
     text-align: center;
+    margin-left : 50px;
+    margin-right : 50px;
 }
 
 .Text{
@@ -75,10 +79,8 @@
     align-items: center;
 }
 .TitleH :hover{
-
     font-size: 50px; /* Adjust the size as desired */
     transition: all 0.5s; /* Animation */
-
 }
 
 
@@ -90,6 +92,13 @@
     margin-bottom: 50px;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.TextBlock{
+
+}
+.heading{
+
 }
 
 .EndPage{
@@ -107,14 +116,14 @@
         flex-direction: column; /* Adjust flex direction for smaller screens */
     }
 
-    .image {
-        height: 300px; /* Adjust the image height for smaller screens */
-        margin-bottom: 50px; /* Adjust the margin for smaller screens */
-    }
+    /*.image {
+        height: 300px; !* Adjust the image height for smaller screens *!
+        margin-bottom: 50px; !* Adjust the margin for smaller screens *!
+    }*/
 
     .MainTitle {
-        margin: 100px auto auto;
-        font-size: 40px; /* Adjust font size for smaller screens */
+        font-size: 2.5rem;
+        margin-top: 27rem;
     }
 
     .Title {

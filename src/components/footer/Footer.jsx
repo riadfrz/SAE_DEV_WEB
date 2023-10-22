@@ -1,7 +1,6 @@
 
 import React from 'react';
 import styles from './Footer.module.css'; // Import your CSS styles
-import Logo from '../../images/logo.jpg';
 import { Link } from 'react-router-dom'; // Import your logo image
 
 const Footer = () => {
@@ -60,10 +59,10 @@ const Footer = () => {
                     </form>
                 </div>
                 <div className={styles.footerLinks}>
-                    <a href="Donnéespers">Données personnelles</a>
-                    <a href="https://www.demarches-simplifiees.fr/commencer/4b2693bc-0e68-4050-81f7-7c6cfb080038">Formulaire de contact</a>
-                    <a href="/Legal">Mentions légales</a>
-                    <a href="/">Réalisation : Evernet</a>
+                    <Link to="/Donnéespers">Données personnelles</Link>
+                    <Link to="https://www.demarches-simplifiees.fr/commencer/4b2693bc-0e68-4050-81f7-7c6cfb080038">Formulaire de contact</Link>
+                    <Link to="/Legal">Mentions légales</Link>
+                    <Link to="/">Réalisation : Evernet</Link>
                 </div>
             </div>
         </footer>
