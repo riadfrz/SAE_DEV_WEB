@@ -8,6 +8,8 @@ import Event from '../../src/components/aides/ImageSlider'
 import { SliderData } from '../components/aides/SliderData';
 import Footer from '../components/footer/Footer'
 import Etudiant from '../../src/components/etudiant/etudiant'
+import classes from "../components/pres_code/Presentation.module.css";
+
 
 
 
@@ -21,9 +23,8 @@ function Etudier() {
             <Etudiant />
             <Event slides={SliderData} />
             <LogementRestauration />
-            <Carte />
+            <div className={classes.EndPage}></div>
             <Footer />
-
         </div>
     );
 }
