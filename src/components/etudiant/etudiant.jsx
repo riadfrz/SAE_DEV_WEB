@@ -12,7 +12,7 @@ const Etudiant = () => {
             <img src={Drive} alt="/" />
         </div>
         <div>
-            <div onClick={() => toggleSpeakText("Venez étudier à Morlaix , t découvrer un cadre de vie serein. ," +
+            <div onClick={() => toggleSpeakText("Venez étudier à Morlaix , et découvrer un cadre de vie serein. ," +
                 "Entre prépas, formations professionnalisantes et parcours universitaires, vous trouverez sûrement votre place !", 'fr-FR')}>
                 <h2> Venez étudier à Morlaix <span> et découvrer un cadre de vie serein</span></h2>
             </div>

@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import styles from './ImageSlider.module.css';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import useSpeechSynthesis from '../../Functions/Text2speech';
+
 
 const ImageSlider = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
+    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+
+    const [current, setCurrent] = useState(0);
   const length = slides.length;
 
   const nextSlide = () => {
@@ -21,12 +25,14 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div className={styles.event}>
-                  <div className={styles.heading}>
-            <h1>Évènements</h1>
+        <div className={styles.heading}>
+            <div onClick={() => toggleSpeakText("Évènements ,", 'fr-FR')}>
+                <h1>Évènements</h1>
+            </div>
             <div className={styles.text_bg}>
             </div>
 
-          </div>
+        </div>
         
     <section className={styles.slider}>
 
