@@ -6,16 +6,17 @@ import imgCarte3 from '../../images/prepa.jpg';
 import Card from './Card';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import useSpeechSynthesis from '../../Functions/Text2speech';
 const Formations = () => {
-  
+    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
   return (
     <div className={styles.actu}>
-              <div className={styles.heading}>
-        <h1>Etablissements et formations</h1>
-        <div className={styles.text_bg}>
+        <div className={styles.heading}>
+            <div onClick={() => toggleSpeakText("Etablissements et formations ,", 'fr-FR')}>
+                <h1>Etablissements et formations</h1>
+            </div>
+            <div className={styles.text_bg}></div>
         </div>
-
-      </div>
 
       <div className={styles.container}>
       <Card
