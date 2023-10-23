@@ -105,7 +105,7 @@ const Immo = () => {
         </div>
 
       </div>
-      
+      <div className={styles.EndPage}></div>
     </div>
 
   );

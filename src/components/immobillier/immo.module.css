@@ -1,4 +1,13 @@
-  .heading {
+.actu {
+  position: relative;
+}
+.EndPage{
+  left: 150px;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+}
+.heading {
     width: 100%;
     height: 200px;
     background-color: #0F5F53CC;

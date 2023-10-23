@@ -13,7 +13,6 @@ const Footer = () => {
                         <img className={styles.logo} src={Logo} alt="Logo" style={{ width: '200px', height: '100px' }}/>
                     </Link>
                 </div>*/}
-
                 <div className={styles.socialMedia}>
                     <h3>Suivez-nous</h3>
                     <div className={styles.socialIcons}>
@@ -49,10 +48,6 @@ const Footer = () => {
                 </div>
                 <div className={styles.newsletter}>
                     <h3>Abonnez-vous à notre newsletter</h3>
-                    {/*<p>
-                        Recevez des mises à jour et des offres exclusives directement dans
-                        votre boîte de réception.
-                    </p>*/}
                     <form>
                         <input type="email" placeholder="Votre adresse e-mail" />
                         <button>S'abonner</button>
