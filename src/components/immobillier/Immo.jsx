@@ -18,7 +18,7 @@ const Immo = () => {
         </div>
 
 
-      <div className={styles.form}>
+      
       <div className={styles.heading}>
         <h1>DÉPOSER UNE OFFRE</h1>
         <h3>OUTIL INDISPONIBLE POUR LE MOMENT</h3>
@@ -26,7 +26,7 @@ const Immo = () => {
           Vous possédez un bâtiment ou un local à vendre ou à louer sur le territoire de Morlaix Communauté. Contactez-nous pour qu'il paraisse dans cet annuaire.
         </p>
       </div>
-
+      <div className={styles.form}>
       <div className={styles.container}>
         <p>Fonction :</p>
         <input 
@@ -89,7 +89,7 @@ const Immo = () => {
         </label>
       </div>
 
-
+      </div>
         <div className={styles.texte}>
             <h1>Un outil de développement local</h1>
             <p>
@@ -104,7 +104,6 @@ const Immo = () => {
             </p>
         </div>
 
-      </div>
       <div className={styles.EndPage}></div>
     </div>
 
