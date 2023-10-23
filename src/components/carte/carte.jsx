@@ -6,8 +6,12 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import MapIcon from '../../images/placeholder.png';
 import Button from'./Button';
+import useSpeechSynthesis from '../../Functions/Text2speech';
+
 const Carte = () => {
-  const [center] = useState({ lat: 48.5797, lng: -3.83332 });
+    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+
+    const [center] = useState({ lat: 48.5797, lng: -3.83332 });
   const ZOOM_LEVEL = 10.5;
 
   // Custom icon for the marker
@@ -24,8 +28,10 @@ const Carte = () => {
     <div className={styles.carte}>
     
        <div >
-            <h1>Carte des communes</h1>
-            
+           <div onClick={() => toggleSpeakText("Carte des communes ,", 'fr-FR')}>
+               <h1>Carte des communes</h1>
+           </div>
+
             <Button 
         label ="PLUS D'INFO"
         link = '/services'

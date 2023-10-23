@@ -19,7 +19,7 @@ const Presentation = () => {
 
 
             <div className={classes.TextBlock}>
-                <div className={classes.TitleH}>
+                <div className={classes.TextBlock}>
                     <div className={classes.Title}
                          onClick={() => toggleSpeakText("Qui Somme nous? ," +
                              "Morlaix Communauté, Établissement Public de Coopération Intercommunale (E,P,C,I), a été fondé le 14 avril 1995 et regroupe actuellement 26 communes. ," +
@@ -40,7 +40,7 @@ const Presentation = () => {
                 </div>
             </div>
             <div className={classes.TextBlock}>
-                <div className={classes.TitleH}>
+                <div className={classes.TextBlock}>
                 <div
                     className={classes.Title}
                     onClick={() => toggleSpeakText("Le conseil de communauté. ," +
@@ -70,7 +70,7 @@ const Presentation = () => {
                     </div>
             </div>
             <div className={classes.TextBlock}>
-                <div className={classes.TitleH}>
+                <div className={classes.TextBlock}>
                 <div
                     className={classes.Title}
                     onClick={() => toggleSpeakText("Le bureau communautaire. ," +
@@ -102,7 +102,7 @@ const Presentation = () => {
                 </div>
             </div>
             <div className={classes.TextBlock}>
-                <div className={classes.TitleH}>
+                <div className={classes.TextBlock}>
                 <div
                     className={classes.Title}
                     onClick={() => toggleSpeakText("Les commissions. ," +

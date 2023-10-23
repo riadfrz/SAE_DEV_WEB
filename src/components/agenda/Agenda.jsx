@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Agenda.module.css';
 import Card from './Card';
 import imgCarteAgenda from '../../images/CarteAgenda.jpg';
+import useSpeechSynthesis from '../../Functions/Text2speech';
 
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
@@ -12,12 +13,16 @@ import 'swiper/css/navigation';
 
 
 const Agenda = () => {
+  const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+
   return (
     <div className={styles.agenda}>
       <div className={styles.agenda2}> 
       <div className={styles.heading}>
-        <h1>Agenda</h1>
-       
+        <div onClick={() => toggleSpeakText("Agenda ,", 'fr-FR')}>
+          <h1>Agenda</h1>
+        </div>
+
       </div>
       <div className={styles.slider_container}>
         <Swiper

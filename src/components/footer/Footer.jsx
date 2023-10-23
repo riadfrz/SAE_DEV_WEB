@@ -62,7 +62,6 @@ const Footer = () => {
                     <Link to="/Donnéespers">Données personnelles</Link>
                     <Link to="https://www.demarches-simplifiees.fr/commencer/4b2693bc-0e68-4050-81f7-7c6cfb080038">Formulaire de contact</Link>
                     <Link to="/Legal">Mentions légales</Link>
-                    <Link to="/">Réalisation : Evernet</Link>
                 </div>
             </div>
         </footer>

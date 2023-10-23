@@ -6,16 +6,22 @@ import imgCarte3 from '../../images/CarteActu3.png';
 import Card from './Card';
 import Button from'./Button';
 import { Link } from 'react-router-dom';
+import classes from "../pres_code/Presentation.module.css";
+import useSpeechSynthesis from "../../Functions/Text2speech"
+
 const Actu = () => {
-  
+    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+
   return (
     <div className={styles.actu}>
-              <div className={styles.heading}>
-        <h1>Découvrez l'actualité</h1>
-        <div className={styles.text_bg}>
+        <div className={styles.heading}>
+            <div onClick={() => toggleSpeakText("Découvrez l'actualité ,", 'fr-FR')}>
+                <h1>Découvrez l'actualité</h1>
+            </div>
+            <div className={styles.text_bg}></div>
         </div>
-
-      </div>
+        <div className={styles.heading}>
+        </div>
 
       <div className={styles.container}>
       <Card
