@@ -9,6 +9,8 @@ import { SliderData } from '../components/aides/SliderData';
 import Footer from '../components/footer/Footer'
 import Etudiant from '../../src/components/etudiant/etudiant'
 import classes from "../components/pres_code/Presentation.module.css";
+import TextToSpeechInstructions from "../components/text2seech_instructio/t2s";
+
 
 
 
@@ -18,6 +20,7 @@ function Etudier() {
         <div>
 
             <Navbar />
+            <TextToSpeechInstructions />
             <Header />
             <Formations/>
             <Etudiant />

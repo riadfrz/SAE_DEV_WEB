@@ -7,6 +7,7 @@ import Actu from './components/actu/Actu'
 import Event from './components/event/ImageSlider'
 import { SliderData } from './components/event/SliderData';
 import Footer from './components/footer/Footer'
+import TextToSpeechInstructions from "./components/text2seech_instructio/t2s";
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <div>
        
       <Navbar />
+        <TextToSpeechInstructions />
       <Hero />
       <Actu />
       <Event slides={SliderData} />
