@@ -16,9 +16,9 @@ const Immo = () => {
 
   return (
     <div className={styles.actu}>
-        <div onClick={() => toggleSpeakText("Bourse de l'immobillier ,", 'fr-FR')}>
+        <div onClick={() => toggleSpeakText("Bourse de l'immobilier ,", 'fr-FR')}>
              <div className={styles.tetepage}>
-                    <h1>Bourse de l'immobillier</h1>
+                    <h1>Bourse de l'immobilier</h1>
             </div>
         </div>
 

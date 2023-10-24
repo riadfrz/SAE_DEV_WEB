@@ -18,7 +18,15 @@
     align-items: center;
     max-width: 100%;
   }
-
+.actu .tetepage h1{
+  margin: auto;
+  margin-top: 26rem;
+  text-align: center;
+  text-shadow: 5px 5px #182BB4;
+  color: #FFD581;
+  font-family: Montserrat;
+  font-size: 3rem;
+}
   .heading p {
     color: #FFD581;
     text-align: center;
