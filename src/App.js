@@ -15,16 +15,14 @@ import TextToSpeechInstructions from "./components/text2seech_instructio/t2s";
 function App() {
   return (
     <div>
-       
-      <Navbar />
+        <Navbar />
         <TextToSpeechInstructions />
-      <Hero />
-      <Actu />
-      <Event slides={SliderData} />
-      <Agenda />
-      <Carte /> 
-      <Footer />
-     
+        <Hero />
+        <Actu />
+        <Event slides={SliderData} />
+        <Agenda />
+        <Carte />
+        <Footer />
     </div>
   );
 }
