@@ -74,7 +74,7 @@ const Immo = () => {
             checked={selectedOption === "A louer"}
             onChange={() => handleOptionChange("A louer")}
           />
-          A louer
+          <p>A louer </p>
         </label>
         <label>
           <input
@@ -83,7 +83,7 @@ const Immo = () => {
             checked={selectedOption === "A vendre"}
             onChange={() => handleOptionChange("A vendre")}
           />
-          A vendre
+          <p>A vendre </p>
         </label>
         <label>
           <input
@@ -92,7 +92,7 @@ const Immo = () => {
             checked={selectedOption === "Tous"}
             onChange={() => handleOptionChange("Tous")}
           />
-          Tous
+          <p>Tous</p>
         </label>
       </div>
 

@@ -5,8 +5,7 @@ import imgCarte2 from '../../images/CarteActu2.png';
 import imgCarte3 from '../../images/CarteActu3.png';
 import Card from './Card';
 import Button from'./Button';
-import { Link } from 'react-router-dom';
-import classes from "../pres_code/Presentation.module.css";
+
 import useSpeechSynthesis from "../../Functions/Text2speech"
 
 const Actu = () => {

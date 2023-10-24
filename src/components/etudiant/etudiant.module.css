@@ -10,11 +10,18 @@
 
 .driver img {
     max-width: 800px;
+    display : grid;
 }
 
 
 .driver h2 {
     padding-top: 20%;
+    font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 2rem;
 }
 
 .driver span {
@@ -26,6 +33,12 @@
     color: #333;
     padding: 1rem 0;
     border: none;
+    font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+
 }
 
 .driver button {
@@ -58,6 +71,11 @@
     }
 
     .driver h2 {
-        padding-top: 10%;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+    .driver p {
+        padding-left: 0;
+      font-size: 1rem;
     }
 }

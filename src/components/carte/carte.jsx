@@ -7,12 +7,16 @@ import "leaflet/dist/leaflet.css";
 import MapIcon from '../../images/placeholder.png';
 import Button from'./Button';
 import useSpeechSynthesis from '../../Functions/Text2speech';
-
+import { Link } from 'react-router-dom';
 const Carte = () => {
     const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
 
     const [center] = useState({ lat: 48.5797, lng: -3.83332 });
-  const ZOOM_LEVEL = 10.5;
+    const [Guerlesquin] = useState({ lat: 48.5167, lng: -3.5833 });
+    const [Plouezoch] = useState({ lat: 48.6333, lng: -3.8167 });
+    const [Locquirec] = useState({ lat: 48.69243, lng: -3.64554 });
+    const [Carantec] = useState({ lat: 48.6667, lng: -3.9167 });
+  const ZOOM_LEVEL = 9.5;
 
   // Custom icon for the marker
   const MapIconIcon = new L.Icon({
@@ -48,7 +52,27 @@ const Carte = () => {
       {/* Marker with a custom icon */}
       <Marker position={center} icon={MapIconIcon}>
         <Popup>
-          Morlaix
+        <Link to='/services'>Morlaix </Link>
+        </Popup>
+      </Marker>
+      <Marker position={Guerlesquin} icon={MapIconIcon}>
+        <Popup>
+        <Link to='/services'> Guerlesquin</Link>
+        </Popup>
+      </Marker>
+      <Marker position={Plouezoch} icon={MapIconIcon}>
+        <Popup>
+        <Link to='/services'> Plouezoch</Link>
+        </Popup>
+      </Marker>
+      <Marker position={Locquirec} icon={MapIconIcon}>
+        <Popup>
+        <Link to='/services'> Locquirec</Link>
+        </Popup>
+      </Marker>
+      <Marker position={Carantec} icon={MapIconIcon}>
+        <Popup>
+        <Link to='/services'>Carantec </Link>
         </Popup>
       </Marker>
     </MapContainer>

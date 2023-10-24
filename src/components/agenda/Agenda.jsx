@@ -59,40 +59,40 @@ const Agenda = () => {
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
+              date = '27/10'
+              make='article 1'
               link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
+              date = '25/10'
+              make='article 2'
               link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
+              date = '22/10'
+              make='article 3'
               link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
+              date = '19/10'
+              make='article 4'
               link='/services'
             />
           </SwiperSlide>
           <SwiperSlide>
             <Card
              image={imgCarteAgenda}
-             date = '19/07'
-             make='test'
+             date = '05/10'
+             make='article 5'
              link='/services'
             />
           </SwiperSlide>
@@ -100,8 +100,80 @@ const Agenda = () => {
           <SwiperSlide>
             <Card
               image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
+              date = '19/09'
+              make='article 6'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '12/09'
+              make='article 7'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '10/09'
+              make='article 8'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '09/09'
+              make='article 9'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '05/09'
+              make='article 10'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '04/09'
+              make='article 11'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '01/09'
+              make='article 12'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '30/08'
+              make='article 13'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '23/08'
+              make='article 14'
+              link='/services'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card
+              image={imgCarteAgenda}
+              date = '21/08'
+              make='article 15'
               link='/services'
             />
           </SwiperSlide>
@@ -109,79 +181,7 @@ const Agenda = () => {
             <Card
               image={imgCarteAgenda}
               date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test' 
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
-              link='/services'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              image={imgCarteAgenda}
-              date = '19/07'
-              make='test'
+              make='article 16'
               link='/services'
             />
           </SwiperSlide>
