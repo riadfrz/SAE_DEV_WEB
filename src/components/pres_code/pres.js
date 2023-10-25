@@ -21,11 +21,11 @@ const Presentation = () => {
             <div className={classes.TextBlock}>
                 <div className={classes.TextBlock}>
                     <div className={classes.Title}
-                         onClick={() => toggleSpeakText("Qui Somme nous? ," +
+                         onClick={() => toggleSpeakText("Qui Sommes nous? ," +
                              "Morlaix Communauté, Établissement Public de Coopération Intercommunale (E,P,C,I), a été fondé le 14 avril 1995 et regroupe actuellement 26 communes. ," +
                              "Grâce à l'exercice de ses diverses compétences, Morlaix Communauté s'engage résolument dans une mission de service public visant à améliorer la qualité de vie de ses résidents, en mettant en œuvre une série de projets concrets.",
                              'fr-FR')}
-                    >Qui Somme nous?
+                    >Qui Sommes nous?
                     </div>
                 </div>
                 <div className={classes.rectangle}></div>
