@@ -9,7 +9,7 @@ import Button from'./Button';
 import useSpeechSynthesis from '../../Functions/Text2speech';
 import { Link } from 'react-router-dom';
 const Carte = () => {
-    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); 
 
     const [center] = useState({ lat: 48.5797, lng: -3.83332 });
     const [Guerlesquin] = useState({ lat: 48.5167, lng: -3.5833 });
@@ -18,7 +18,7 @@ const Carte = () => {
     const [Carantec] = useState({ lat: 48.6667, lng: -3.9167 });
   const ZOOM_LEVEL = 9.5;
 
-  // Custom icon for the marker
+  // Icône personnalisée pour le marqueur
   const MapIconIcon = new L.Icon({
     iconUrl: MapIcon,
     iconSize: [32, 32],
@@ -49,7 +49,7 @@ const Carte = () => {
       />
 
 
-      {/* Marker with a custom icon */}
+      {/* Les marqueurs des villes */}
       <Marker position={center} icon={MapIconIcon}>
         <Popup>
         <Link to='/services'>Morlaix </Link>

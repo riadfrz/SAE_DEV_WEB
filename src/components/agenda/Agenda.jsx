@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 
 
 const Agenda = () => {
-  const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+  const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Utilise la synthèse vocale
 
   return (
     <div className={styles.agenda}>
@@ -24,6 +24,7 @@ const Agenda = () => {
         </div>
 
       </div>
+      {/* Utilisation du composant Swiper pour afficher les articles de l'agenda */}
       <div className={styles.slider_container}>
         <Swiper
 
@@ -31,6 +32,7 @@ const Agenda = () => {
           spaceBetween={10}
           slidesPerView={5}
           navigation
+          /* on modifie le nombre de cartes affichées en fonction de la taille de l'écran */
           breakpoints={{    
          
             200: {
@@ -62,6 +64,7 @@ const Agenda = () => {
               date = '27/10'
               make='article 1'
               link='/services'
+              alt='Carte 1'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -70,6 +73,7 @@ const Agenda = () => {
               date = '25/10'
               make='article 2'
               link='/services'
+              alt='Carte 2'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -78,6 +82,7 @@ const Agenda = () => {
               date = '22/10'
               make='article 3'
               link='/services'
+              alt='Carte 3'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -86,6 +91,7 @@ const Agenda = () => {
               date = '19/10'
               make='article 4'
               link='/services'
+              alt='Carte 4'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -94,6 +100,7 @@ const Agenda = () => {
              date = '05/10'
              make='article 5'
              link='/services'
+             alt='Carte 5'
             />
           </SwiperSlide>
 
@@ -103,6 +110,7 @@ const Agenda = () => {
               date = '19/09'
               make='article 6'
               link='/services'
+              alt='Carte 6'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -111,6 +119,7 @@ const Agenda = () => {
               date = '12/09'
               make='article 7'
               link='/services'
+              alt='Carte 7'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -119,6 +128,7 @@ const Agenda = () => {
               date = '10/09'
               make='article 8'
               link='/services'
+              alt='Carte 8'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -127,6 +137,7 @@ const Agenda = () => {
               date = '09/09'
               make='article 9'
               link='/services'
+              alt='Carte 9'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -135,6 +146,7 @@ const Agenda = () => {
               date = '05/09'
               make='article 10'
               link='/services'
+              alt='Carte 10'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -143,6 +155,7 @@ const Agenda = () => {
               date = '04/09'
               make='article 11'
               link='/services'
+              alt='Carte 11'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -151,6 +164,7 @@ const Agenda = () => {
               date = '01/09'
               make='article 12'
               link='/services'
+              alt='Carte 12'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -159,6 +173,7 @@ const Agenda = () => {
               date = '30/08'
               make='article 13'
               link='/services'
+              alt='Carte 13'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -167,6 +182,7 @@ const Agenda = () => {
               date = '23/08'
               make='article 14'
               link='/services'
+              alt='Carte 14'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -175,6 +191,7 @@ const Agenda = () => {
               date = '21/08'
               make='article 15'
               link='/services'
+              alt='Carte 15'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -183,6 +200,7 @@ const Agenda = () => {
               date = '19/07'
               make='article 16'
               link='/services'
+              alt='Carte 16'
             />
           </SwiperSlide>
           

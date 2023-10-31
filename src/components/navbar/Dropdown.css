@@ -1,6 +1,6 @@
 .dropdown-menu {
   width: 250px;
-  height: 400px; /* Set a fixed height for the dropdown */
+  height: 400px; 
   position: absolute;
   top: 90px;
   left: 50%;
@@ -10,12 +10,12 @@
   border-radius: 10px;
   overflow-y: auto; 
   z-index: 5000000;
-  background: #0F5F53; /* Set background color */
-  padding: 0; /* Reset padding */
-  margin: 0; /* Reset margin */
+  background: #0F5F53; 
+  padding: 0; 
+  margin: 0; 
 }
 
-/* For Webkit/Blink based browsers */
+
 .dropdown-menu::-webkit-scrollbar {
   width: 8px; 
 }
@@ -26,7 +26,7 @@
   border-radius: 4px; 
 }
 
-/*Edge style scrollbar */
+
 .dropdown-menu {
   scrollbar-width: thin;
   scrollbar-color: #EC66A1 transparent; 
@@ -63,7 +63,7 @@
 @media screen and (max-width: 1200px) {
   .dropdown-menu {
     width: 250px;
-    height: 200px; /* Set a fixed height for smaller screens */
+    height: 200px; 
     position: absolute;
     top: 35px;
     left: 75%;
@@ -71,7 +71,7 @@
     list-style: none;
     text-align: left;
     border-radius: 10px;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
   border : solid  #FFD581EE;
   }
   
@@ -85,7 +85,7 @@
 @media screen and (max-width: 550px) { 
   .dropdown-menu {
     width: 120px;
-    height: 200px; /* Set a fixed height for smaller screens */
+    height: 200px; 
     position: absolute;
     top: 35px;
     left: 70%;
@@ -100,7 +100,7 @@
 @media screen and (max-width: 300px) { 
   .dropdown-menu {
     width: 100px;
-    height: 200px; /* Set a fixed height for smaller screens */
+    height: 200px; 
     position: absolute;
     top: 35px;
     left: 75%;

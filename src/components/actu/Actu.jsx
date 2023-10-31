@@ -9,7 +9,7 @@ import Button from'./Button';
 import useSpeechSynthesis from "../../Functions/Text2speech"
 
 const Actu = () => {
-    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
+    const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Utilise la synthèse vocale
 
   return (
     <div className={styles.actu}>
@@ -23,23 +23,27 @@ const Actu = () => {
         </div>
 
       <div className={styles.container}>
+       {/*  Utilisation du composant Card */}
       <Card
               image={imgCarte1}
               title=' Journal Grands Projets #01 : l ouverture de la rivière de Morlaix'
               text='Avec son nouveau journal Grands Projets, Morlaix Communauté informe les habitants au plus près...'
               link='/services'
+              alt='Carte 1'
             />
       <Card
               image={imgCarte2}
               title='Prime achat Vélo à Assistance Electrique (VAE) 2023'
               text='Achetez un vélo électrique, en 2023, Morlaix Communauté vous accompagne !'
               link='/services'
+              alt='Carte 2'
             />
-       <Card
+       <Card 
               image={imgCarte3}
               title='Le défi des foyers presque zéro déchet : prêt à relever le défi ?'
               text='La nouvelle session du défi des foyers presque zéro déchet approche...'
               link='/services'
+              alt='Carte 3'
             />
        
         </div>

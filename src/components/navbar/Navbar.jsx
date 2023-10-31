@@ -1,226 +1,237 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import Logo from '../../images/logo.jpg';
-import Dropdown from './Dropdown'; // Import the Dropdown component
+import Dropdown from './Dropdown'; 
 import { Link } from 'react-router-dom';
 import { FaTableCells } from "react-icons/fa6";
 
 
-var data = require("../../ARTICLES.json");
+var data = require("../../ARTICLES.json"); // Importe les données pour la barre de recherche.
 
 const Navbar = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [click, setClick] = useState(false);
-  const [activeDropdownIndex, setActiveDropdownIndex] = useState(null);
-  const [click2, setClick2] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth); // stocke la largeur de la fenêtre
+  const [click, setClick] = useState(false); // gére le clic sur le menu
+  const [activeDropdownIndex, setActiveDropdownIndex] = useState(null); // indice du dropdown (actif ou pas)
+  const [click2, setClick2] = useState(false); // gére le clic sur le menu déroulant pour mobile
+  const [DropCheck, setDropCheck] = useState(null); 
 
 
+ // Tableau contenant les éléments du menu principal avec leurs éléments de menu déroulant correspondants
   const navItems = [
     {
       label: "Communauté",
       dropdownContent: [
         { title: "Présentation", path: "/Presentation" },
         { title: "Immobilier", path: "/Immobillier" },
-        { title: "Les compétences", path: "/item3" },
-        { title: "Les élus", path: "/item4" },
-        { title: "Les services", path: "/item2" },
-        { title: "Finance", path: "/item3" },
-        { title: "Commande publique", path: "/item4" },
-        { title: "Delegations de services publics", path: "/item2" },
-        { title: "Les assemblées", path: "/item3" },
-        { title: "Trajectoire 2030 - Projet de Territoire de Morlaix Communauté", path: "/item4" },
+        { title: "Les compétences", path: "/services" },
+        { title: "Les élus", path: "/services" },
+        { title: "Les services", path: "/services" },
+        { title: "Finance", path: "/services" },
+        { title: "Commande publique", path:"/services" },
+        { title: "Delegations de services publics",  path:"/services" },
+        { title: "Les assemblées", path:  "/services" },
+/*         { title: "Trajectoire 2030 - Projet de Territoire de Morlaix Communauté", path: "/item4" },
         { title: "Le rapport d'activités 2021", path: "/item2" },
         { title: "Bro Montroulez", path: "/item3" },
-        { title: "Catalogue des tarifs", path: "/item4" },
+        { title: "Catalogue des tarifs", path: "/item4" }, */
 
       ]
     },
     {
       label: "Domaines d'actions",
       dropdownContent: [
-        { title: "Aménagement de l'espace", path: "/item1" },
-        { title: "Economie", path: "/item2" },
-        { title: "Cohésion sociale - Jeunesse", path: "/item3" },
-        { title: "Eau et Assainissement", path: "/item4" },
-        { title: "Développement durable", path: "/item4" },
-        { title: "Collecte et valorisation des déchets", path: "/item4" },
-        { title: "Système d'Information Géographique (SIG)", path: "/item4" },
-        { title: "Transports et Déplacements", path: "/item4" },
-        { title: "Habitat - Logement", path: "/item4" },
-        { title: "Tourisme", path: "/item4" },
-        { title: "Mer et littoral", path: "/item4" },
-        { title: "Milieux naturels", path: "/item4" },
-        { title: "Enseignement supérieur", path: "/item4" },
+        { title: "Aménagement de l'espace", path: "/services" },
+        { title: "Economie", path: "/services" },
+        { title: "Cohésion sociale - Jeunesse", path: "/services" },
+        { title: "Eau et Assainissement", path:  "/services" },
+        { title: "Développement durable", path: "/services" },
+        { title: "Collecte et valorisation des déchets", path:  "/services" },
+        { title: "Système d'Information Géographique (SIG)", path:  "/services" },
+        { title: "Transports et Déplacements", path:  "/services" },
+        { title: "Habitat - Logement", path:  "/services" },
+        { title: "Tourisme", path:  "/services" },
+        { title: "Mer et littoral", path:  "/services" },
+        { title: "Milieux naturels", path:  "/services" },
+        { title: "Enseignement supérieur", path:  "/services" },
         
       ]
     },
     {
       label: "Les grands projets",
       dropdownContent: [
-        { title: "Le PLUI-H", path: "/item1" },
-        { title: "Le Pôle d’échanges Multimodal (P.E.M)", path: "/item2" },
-        { title: "Réhabilitation de la Manufacture", path: "/item3" },
-        { title: "ZAC de St Fiacre", path: "/item4" },
-        { title: "Modernisation de l'aéroport Morlaix Ploujean", path: "/item4" },
-        { title: "Aménagement des ports", path: "/item4" },
+        { title: "Le PLUI-H", path:  "/services" },
+        { title: "Le Pôle d’échanges Multimodal (P.E.M)", path:  "/services" },
+        { title: "Réhabilitation de la Manufacture", path:  "/services" },
+        { title: "ZAC de St Fiacre", path:  "/services" },
+        { title: "Modernisation de l'aéroport Morlaix Ploujean", path: "/services" },
+        { title: "Aménagement des ports", path:  "/services" },
       ]
     },
     {
       label: "Les équipements",
       dropdownContent: [
-        { title: "Les déchèteries communautaires", path: "/item1" },
-        { title: "Le Rail Route", path: "/item2" },
-        { title: "Les ZA", path: "/item3" },
-        { title: "Les ports", path: "/item4" },
-        { title: "L'aéroport Morlaix Ploujean", path: "/item4" },
-        { title: "La Manufacture des Tabacs", path: "/item4" },
-        { title: "La maison Penanault", path: "/item4" },
-        { title: "L'Auberge de jeunesse", path: "/item4" },
-        { title: "L'Espace aquatique", path: "/item4" },
-        { title: "La Cafét'", path: "/item4" },
-        // Add more items as needed
+        { title: "Les déchèteries communautaires", path:  "/services" },
+        { title: "Le Rail Route", path:  "/services" },
+        { title: "Les ZA", path:  "/services" },
+        { title: "Les ports", path:  "/services" },
+        { title: "L'aéroport Morlaix Ploujean", path:  "/services" },
+        { title: "La Manufacture des Tabacs", path:  "/services" },
+        { title: "La maison Penanault", path:  "/services" },
+        { title: "L'Auberge de jeunesse", path:  "/services" },
+        { title: "L'Espace aquatique", path:  "/services" },
+        { title: "La Cafét'", path:  "/services" },
       ]
     },
     {
       label: "Renseignements",
       dropdownContent: [
-        { title: "Commande publique", path: "/item1" },
-        { title: "La collectivité recrute", path: "/item2" },
-        { title: "Demandes de subventions", path: "/item3" },
-        { title: "Annuaire des lotissements", path: "/item4" },
-        { title: "Locaux disponibles", path: "/item4" },
-        { title: "Linéotim, Horaires", path: "/item4" },
-        { title: "Urbanisme", path: "/item4" },
-        { title: "Annuaire des associations", path: "/item4" },
+        { title: "Commande publique", path:  "/services" },
+        { title: "La collectivité recrute", path:  "/services" },
+        { title: "Demandes de subventions", path:  "/services" },
+        { title: "Annuaire des lotissements", path: "/services" },
+        { title: "Locaux disponibles", path:  "/services" },
+        { title: "Linéotim, Horaires", path: "/services" },
+        { title: "Urbanisme", path:  "/services" },
+        { title: "Annuaire des associations", path:  "/services" },
       ]
     },
     {
       label: <FaTableCells size={30} style={{marginTop: '8px', color:'white'}} />,
       dropdownContent: [
-        { title: "Habiter", path: "/item1" },
-        { title: "Se déplacer", path: "/item2" },
-        { title: "Entreprendre", path: "/item3" },
-        { title: "Visiter / Sortir", path: "/item4" },
-        { title: "Grandir", path: "/item4" },
-        { title: "Aménager durablement", path: "/item4" },
-        { title: "Réduire, trier les déchets ", path: "/item4" },
+        { title: "Habiter", path:  "/services" },
+        { title: "Se déplacer", path:  "/services" },
+        { title: "Entreprendre", path:  "/services" },
+        { title: "Visiter / Sortir", path: "/services" },
+        { title: "Grandir", path:  "/services" },
+        { title: "Aménager durablement", path:  "/services" },
+        { title: "Réduire, trier les déchets ", path:  "/services" },
         { title: "Etudier", path: "/Etudier" },
-        { title: "Vivre ensemble", path: "/item4" },
+        { title: "Vivre ensemble", path:  "/services" },
       ]
     }
   ];
 
+// gére le clic sur un élément du menu et change l'état du clic pour l'ouvrir/fermer 
   const handleItemClick = (index) => {
-    setClick(!click);
+    setClick(!click); 
     setActiveDropdownIndex(activeDropdownIndex === index ? null : index);
   };
+
+
+  // gére le clic sur un élément du menu mobile et change l'état du clic pour l'ouvrir/fermer 
   const handleItemClick2 = (index) => {
-    // Toggle the click state
     setClick2(!click2);
     
-    // Close the dropdown if it's already open (clicked on the same menu item)
+    // Ferme le dropdown si on clique sur le même menu item
     if (DropCheck === index) {
       setDropCheck(null);
     } else {
-      // Set the active dropdown index only if it's a new menu item click
+      // Sinon définit l'index du menu sur le menu item cliqué
       setDropCheck(index);
     }
-  
-    setActiveDropdownIndex(activeDropdownIndex === index ? null : index);
+    setActiveDropdownIndex(activeDropdownIndex === index ? null : index); 
   };
-  
+
+  // met à jour l'état de la largeur de la fenêtre
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
 
+ // ajoute et supprime le handleResize pour permettre l'affichage du dropdown en mobile
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   const [value, setValue] = useState("");
 
+// Met à jour la valeur de la barre de recherche 
   const onChange = (event) => {
     setValue(event.target.value);
   };
 
+// Met à jour la barre de recherche avec la saisi de l'utilisateur
   const onSearch = (searchTerm) => {
-    setValue(searchTerm);
-    console.log("search ", searchTerm);
+    setValue(searchTerm); // Met à jour la variable d'état 'value' avec le terme de recherche saisi.
   };
-  const [DropCheck, setDropCheck] = useState(null);
-  const DropdownCheck= (index) => {
-    setDropCheck(index);
-  };
-  
 
-  
-  return (
- 
-      <nav className='navbar'>
-        <Link to='/' className='navbar-logo'>
-          <img className='img' src={Logo} alt='Logo' style={{ width: '180px', height: '100px' }}/>
-        </Link>
-        <div className='menu-icon' onClick={() => setClick(!click)}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        </div>
-        <ul className={(click )? 'nav-menu active' : 'nav-menu'}>
-          {navItems.map((item, index) => (
-            <li key={index} className='nav-item'>
-              {windowWidth > 1200 ? (
-                <div className='nav-links' onClick={() => handleItemClick(index)}>
-                  {item.label} 
-                  {activeDropdownIndex === index && <Dropdown dropdownContent={item.dropdownContent} />}
-                </div>
-              ) : (
-                <div
-              className='nav-links' onClick={() => handleItemClick2(index)} >
+
+return (
+  <nav className='navbar'>
+     {/* Le lien vers la page d'accueil avec le logo de Morlaix.  */}
+    <Link to='/' className='navbar-logo'>
+      <img className='img' src={Logo} alt='Logo' style={{ width: '180px', height: '100px' }}/>
+    </Link>
+
+    {/* Icône du menu mobile: change d'état entre ouvert/fermé*/}
+    <div className='menu-icon' onClick={() => setClick(!click)}>
+      <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+    </div>
+
+    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+      {navItems.map((item, index) => (
+        <li key={index} className='nav-item'>
+          {/* Si la largeur de la fenêtre > 1200 px */}
+          {windowWidth > 1200 ? (
+            <div className='nav-links' onClick={() => handleItemClick(index)}>
               {item.label} 
+              {/* Affiche le menu déroulant si l'élément de menu est actif  */}
+              {activeDropdownIndex === index && <Dropdown dropdownContent={item.dropdownContent} />}
+            </div>
+          ) : (
+            /* Si < 1200 px (mobile)*/
+            <div className='nav-links' onClick={() => handleItemClick2(index)}>
+              {item.label} 
+              {/*si l'élément de menu est actif, affiche le menu déroulant mobile (ça permet quand on clique 
+                sur le menu de ne pas le faire disparaître en version mobile) */}
               {DropCheck === index && <Dropdown dropdownContent={item.dropdownContent} />}
             </div>
+          )}
+        </li>
+      ))}
 
-               
-              )}
-            </li>
-          ))}
-          
-          <div className="wrapper">
-            <div className="search-container">
-            <div className="search-inner">
-              <input type="text" placeholder='Rechercher...' value={value} onChange={onChange} />
-              
-            </div>
-            <div className="dropdown">
-              {data
-                .filter((item) => {
-                  const searchTerm = value.toLowerCase();
-                  const fullName = item.full_name.toLowerCase();
-
-                  return (
-                    searchTerm &&
-                    fullName.startsWith(searchTerm) &&
-                    fullName !== searchTerm
-                  );
-                })
-                .slice(0, 10)
-                .map((item) => (
-                  <Link to={`./services`} style={{textDecoration: 'none'}} key={item.full_name}>  {/* ./${item.full_name}  */}
-                <div
-                  className="dropdown-row"
-                  onClick={() => onSearch(item.full_name)}
-                >
-                  {item.full_name}
-                </div>
-              </Link>
-                ))}
-            </div>
+      {/* Barre de recherche avec une liste déroulante des résultats de recherche. */}
+      <div className="wrapper">
+        <div className="search-container">
+          <div className="search-inner">
+            <input type="text" placeholder='Rechercher...' value={value} onChange={onChange} />
           </div>
-          </div> 
-       </ul>
-      </nav>
-   
-  );
+
+          {/* Liste déroulante des résultats de recherche */}
+          <div className="dropdown">
+            {/* Filtre les données en fonction du terme saisi par l'utilisateur. */}
+            {data
+              .filter((item) => {
+                const searchTerm = value.toLowerCase();
+                const fullName = item.full_name.toLowerCase();
+  
+                return (
+                  searchTerm &&
+                  fullName.startsWith(searchTerm) &&
+                  fullName !== searchTerm
+                );
+              })
+               // Limite le nombre d'éléments affichés à 10.
+              .slice(0, 10)
+              // Mappe chaque élément filtré vers un lien de page 
+              .map((item) => (
+                // Crée un lien vers la page de services (pour l'instant)
+                <Link to={`/services`} style={{textDecoration: 'none'}} key={item.full_name}>
+                  <div className="dropdown-row" onClick={() => onSearch(item.full_name)}>
+                    {item.full_name}
+                  </div>
+                </Link>
+              ))}
+          </div>
+        </div>
+      </div>
+
+    </ul>
+  </nav>
+);
+
 }
 
 export default Navbar;
