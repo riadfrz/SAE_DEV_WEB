@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './etudiant.module.css';
-import Drive from '../../images/etudiant.jpg'
+import etudiant from '../../images/etudiant.jpg'
 import useSpeechSynthesis from '../../Functions/Text2speech';
 
 const Etudiant = () => {
@@ -9,7 +9,7 @@ const Etudiant = () => {
   return (
     <div className={styles.driver}>
         <div className={styles.left}>
-            <img src={Drive} alt="/" />
+            <img src={etudiant} alt="image étudiant" />
         </div>
         <div>
             <div onClick={() => toggleSpeakText("Venez étudier à Morlaix , et découvrez un cadre de vie serein. ," +

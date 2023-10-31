@@ -20,13 +20,15 @@ const Footer = () => {
                             href="https://www.facebook.com/MorlaixCommunauteOfficiel"
                             target="_blank"
                             rel="noopener noreferrer"
+                            alt= "Facebook"
                         >
-                            <i className="fab fa-facebook"></i>
+                            <i className="fab fa-facebook" ></i>
                         </a>
                         <a
                             href="https://twitter.com/Morlaix_Attract"
                             target="_blank"
                             rel="noopener noreferrer"
+                            alt = "Twitter"
                         >
                             <i className="fab fa-twitter"></i>
                         </a>
@@ -34,6 +36,7 @@ const Footer = () => {
                             href="https://www.youtube.com/user/morlaixFR/feed"
                             target="_blank"
                             rel="noopener noreferrer"
+                            alt= "Youtube"
                         >
                             <i className="fab fa-youtube"></i> {/* Font Awesome YouTube icon */}
                         </a>
@@ -41,6 +44,7 @@ const Footer = () => {
                             href="https://www.linkedin.com/company/morlaix-attractivite/"
                             target="_blank"
                             rel="noopener noreferrer"
+                            alt = "Linkedin"
                         >
                             <i className="fab fa-linkedin"></i> {/* Font Awesome LinkedIn icon */}
                         </a>

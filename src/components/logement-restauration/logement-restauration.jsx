@@ -58,6 +58,7 @@ const LogementRestauration = () => {
                 image={imgCarteAgenda}
                 make='cafétéria étudiante'
                 link='/services'
+                alt='cafétéria étudiante'
             />
           </SwiperSlide>
             <SwiperSlide>
@@ -65,6 +66,7 @@ const LogementRestauration = () => {
               image={imgCarteAgenda2}
               make='studios étudiants'
               link='/services'
+              alt='studios étudiants'
           />
         </SwiperSlide>
             <SwiperSlide>
@@ -72,12 +74,14 @@ const LogementRestauration = () => {
               image={imgCarteAgenda3}
               make='Au pied du sentier des douaniers (GR34)'
               link='/services'
+              alt='GR34'
           />
         </SwiperSlide>          <SwiperSlide>
           <Card
               image={imgCarteAgenda4}
               make='studios de 19 à 22m²'
               link='/services'
+              alt='studios de 19 à 22m²'
           />
         </SwiperSlide>
             <SwiperSlide>
@@ -85,6 +89,7 @@ const LogementRestauration = () => {
                     image={imgCarteAgenda}
                     make='cafétéria étudiante'
                     link='/services'
+                    alt='cafétéria 1'
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -92,6 +97,7 @@ const LogementRestauration = () => {
                     image={imgCarteAgenda}
                     make='cafétéria étudiante'
                     link='/services'
+                    alt='cafétéria 2'
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -99,6 +105,7 @@ const LogementRestauration = () => {
                     image={imgCarteAgenda}
                     make='cafétéria étudiante'
                     link='/services'
+                    alt='cafétéria 3'
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -106,6 +113,7 @@ const LogementRestauration = () => {
                     image={imgCarteAgenda}
                     make='cafétéria étudiante'
                     link='/services'
+                    alt='cafétéria 4'
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -113,6 +121,7 @@ const LogementRestauration = () => {
                     image={imgCarteAgenda}
                     make='cafétéria étudiante'
                     link='/services'
+                    alt='cafétéria 5'
                 />
             </SwiperSlide>
             <SwiperSlide>
@@ -120,6 +129,7 @@ const LogementRestauration = () => {
                     image={imgCarteAgenda}
                     make='cafétéria étudiante'
                     link='/services'
+                    alt='cafétéria 6'
                 />
             </SwiperSlide>
           
