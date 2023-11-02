@@ -1,9 +1,8 @@
-
+// Importation des dépendances React et des styles CSS
 import React from 'react';
 import classes from '../pres_code/Presentation.module.css';
 
-
-/* @figmaId 27:2 */
+// Composant DPers qui affiche la page "mentions légales"
 const Legal = () => {
     return (
 

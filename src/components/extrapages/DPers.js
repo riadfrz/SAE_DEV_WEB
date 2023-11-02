@@ -1,18 +1,20 @@
-
+// Importation des dépendances React et des styles CSS
 import React from 'react';
 import resets from '../_resets.module.css';
 import classes from '../pres_code/Presentation.module.css';
 import { Link } from 'react-router-dom';
 
 
-/* @figmaId 27:2 */
+// Composant DPers qui affiche la page "Données Personnelles"
 const DPers = () => {
     return (
 
         <div className={classes.heading}>
+            {/* Section du titre et de l'image de la page "Données Personnelles" */}
             <div className={classes.image_dp}>
                 <div className={classes.MainTitle}>DONNÉES PERSONNELLES</div>
             </div>
+
             <div className={classes.TextBlock}>
                 <div className={classes.rectangle}></div>
                 <div className={classes.Text}>Morlaix Communauté met à la disposition du public un site internet, véritable support d’accompagnement des élus et agents dans l’accomplissement de leurs missions de service public, et des usagers pour toute demande de renseignemen</div>
@@ -22,6 +24,7 @@ const DPers = () => {
                 <div className={classes.Text}>La simple consultation du site  https://www.morlaix-communaute.bzh, ne nécessite pas d'inscription ni d'identification préalable, aucun enregistrement de données directement nominatives n’est réalisé lors de votre visite sur le site.</div>
                 <div className={classes.Text}>Cette politique de protection des données à caractère personnel fixe la manière dont les données des utilisateurs sont traitées dans le cadre de ce site.</div>
             </div>
+
             <div className={classes.TextBlock}>
                 <div className={classes.Title}>1. Identité et coordonnées du responsable de traitement et de son délégué à la protection des données</div>
                 <div className={classes.rectangle}></div>
@@ -64,11 +67,18 @@ const DPers = () => {
                 <div className={classes.rectangle}></div>
                 <div className={classes.Text}>Sous réserve d'un manquement aux dispositions décrites ci-dessus, vous avez le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de l’informatique et des Libertés) via leur site, en ligne ou par courrier (<Link to="https://www.cnil.fr/agir">ici</Link>)</div>
             </div>
+            <div className={classes.TextBlock}>
+                <div className={classes.Title}>7. Cookies et balises (Tags) Internet</div>
+                <div className={classes.rectangle}></div>
+                <div className={classes.Text}>Qu’est-ce qu’un cookie ?</div>
+                <div className={classes.Text}> Un « cookie » est un petit fichier d'information envoyé sur votre navigateur et enregistré au sein de votre terminal (ex : ordinateur, smartphone). Ce fichier comprend des informations telles que le nom de domaine de l'utilisateur, votre fournisseur d'accès Internet, votre système d'exploitation, ainsi que la date et l'heure d'accès. Les cookies ne risquent en aucun cas d'endommager votre terminal.</div>
+                <div className={classes.Text}>Utilisation des cookies</div>
+                <div className={classes.Text}> Nous sommes susceptibles de recueillir et traiter les informations concernant votre visite de ce site Web, telles que les pages consultées, les recherches effectuées, le site Web visité juste avant celui-ci ou encore vos choix de service ou de personnalisation. Ces informations nous permettent d'améliorer le contenu du site, de votre navigation et/ou de compiler des statistiques sur les individus utilisant notre site à des fins d'étude de marché interne ou encore de vous fournir un service que vous avez demandé.</div>
+                <div className={classes.Text}>Cookies tiers</div>
+                <div className={classes.Text}> Nous sommes susceptibles d'inclure sur notre site, des applications informatiques émanant de tiers, qui vous permettent de partager des contenus de notre site avec d'autres personnes ou de faire connaître à ces autres personnes votre consultation ou votre opinion concernant un contenu de notre site. Tel est notamment le cas des boutons "Partager", "J'aime", issus de réseaux sociaux tels que « Facebook », « Twitter », « LinkedIn », etc.  Le réseau social fournissant un tel bouton applicatif est susceptible de vous identifier grâce à ce bouton, même si vous n'avez pas utilisé ce bouton lors de votre consultation de notre site. En effet, ce type de bouton applicatif peut permettre au réseau social concerné de suivre votre navigation sur notre site, du seul fait que votre compte au réseau social concerné était activé sur votre terminal (session ouverte) durant votre navigation sur notre site. Nous n'avons aucun contrôle sur le processus employé par les réseaux sociaux pour collecter des informations relatives à votre navigation sur notre site et associées aux données personnelles dont ils disposent. Nous vous invitons à consulter les politiques de protection de la vie privée de ces réseaux sociaux afin de prendre connaissance des finalités d'utilisation, notamment publicitaires, des informations de navigation qu'ils peuvent recueillir grâce à ces boutons applicatifs. Ces politiques de protection doivent notamment vous permettre d'exercer vos choix auprès de ces réseaux sociaux, notamment en paramétrant vos comptes d'utilisation de chacun de ces réseaux.</div>
+            </div>
 
-
-
-
-                <div className={classes.EndPage}></div>
+            <div className={classes.EndPage}></div>
         </div>
     )
 };

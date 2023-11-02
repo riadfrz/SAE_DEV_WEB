@@ -4,6 +4,7 @@ import Legal from "../components/extrapages/Legal";
 
 import React from "react";
 
+//page des mention legales
 function Leg() {
     return (
         <div>

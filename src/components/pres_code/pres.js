@@ -1,3 +1,4 @@
+// Importation des dépendances React et des styles pour ce composant
 import React from 'react';
 import classes from './Presentation.module.css';
 import useSpeechSynthesis from '../../Functions/Text2speech';
@@ -5,19 +6,22 @@ import useSpeechSynthesis from '../../Functions/Text2speech';
 
 
 
-/* @figmaId 27:2 */
+
 const Presentation = () => {
+    // Utilisation du hook de synthèse vocale
     const { spokenText, speaking, toggleSpeakText } = useSpeechSynthesis(); // Use the speech utility
 
     return (
         
         <div >
+            {/* Section de présentation du titre */}
             <div className={classes.image}>
+                {/* Titre principal de la section, avec la possibilité de lire à haute voix en cliquant */}
                 <div className={classes.MainTitle}onClick={() => toggleSpeakText("Présentation ,", 'fr-FR')}
                 >Présentation</div>
             </div>
 
-
+            {/* Section "Qui Sommes-nous?" */}
             <div className={classes.TextBlock}>
                 <div className={classes.TextBlock}>
                     <div className={classes.Title}
@@ -25,7 +29,7 @@ const Presentation = () => {
                              "Morlaix Communauté, Établissement Public de Coopération Intercommunale (E,P,C,I), a été fondé le 14 avril 1995 et regroupe actuellement 26 communes. ," +
                              "Grâce à l'exercice de ses diverses compétences, Morlaix Communauté s'engage résolument dans une mission de service public visant à améliorer la qualité de vie de ses résidents, en mettant en œuvre une série de projets concrets.",
                              'fr-FR')}
-                    >Qui Sommes nous?
+                    >Qui Sommes-nous?
                     </div>
                 </div>
                 <div className={classes.rectangle}></div>
@@ -39,6 +43,8 @@ const Presentation = () => {
                     de projets concrets.
                 </div>
             </div>
+
+            {/* Section "Le conseil de communauté" */}
             <div className={classes.TextBlock}>
                 <div className={classes.TextBlock}>
                 <div
@@ -69,6 +75,8 @@ const Presentation = () => {
                         l'amélioration de la vie de ses habitants.
                     </div>
             </div>
+
+            {/* Section "Le bureau communautaire"*/}
             <div className={classes.TextBlock}>
                 <div className={classes.TextBlock}>
                 <div
@@ -101,6 +109,8 @@ const Presentation = () => {
                     dans la gestion de Morlaix Communauté.
                 </div>
             </div>
+
+            {/* Section "Les commissions"*/}
             <div className={classes.TextBlock}>
                 <div className={classes.TextBlock}>
                 <div
@@ -123,6 +133,8 @@ const Presentation = () => {
                         instances délibératives, jouant ainsi un rôle essentiel dans le processus décisionnel de Morlaix Communauté.
                 </div>
             </div>
+
+            {/* Une div de fin de page*/}
             <div className={classes.EndPage}></div>
      </div>
     )
