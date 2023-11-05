@@ -1,0 +1,39 @@
+.Contacts {
+    background-color: white;
+}
+.Contacts .List ul {
+    color: white;
+    list-style-type: none;
+    padding: 15px;
+}
+
+.Contacts p {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Contacts .Container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.Contacts .Container .List {
+    flex-basis: 32%;
+    background-color: #0F5F53;
+    box-shadow: 0 0 1vw 0.3vw white;
+    border-radius: 9px;
+    margin-bottom: 2px;
+}
+
+
+.Contacts .List ul li {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
