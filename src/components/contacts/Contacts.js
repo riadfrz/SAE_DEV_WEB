@@ -38,8 +38,8 @@ const AideEtrangers =
 const aideSanté =
     <ul>
         <li>Service d'aide en cas d'urgences de santé</li>
-        <li>Paul Dupont</li>
-        <li>e-mail: Paul.dupont@crous.fr</li>
+        <li>Matthieu Babar</li>
+        <li>e-mail: matthieu.babar@aide-urg.fr</li>
     </ul>
 const totalContacts = [DirecteurCrous, DepartementEtudes, ServiceSocial, AssociationLogement, AideEtrangers, aideSanté]
 
