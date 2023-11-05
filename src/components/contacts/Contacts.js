@@ -19,7 +19,7 @@ const DepartementEtudes =
     </ul>
 const ServiceSocial =
     <ul>
-        <li>Secrétariat du service social</li>
+        <li>Secrétariat du service social de Morlaix</li>
         <li>Joséphine Adrien</li>
         <li>e-mail: josephine.adrien@service-social.fr</li>
     </ul>
@@ -33,11 +33,11 @@ const AideEtrangers =
     <ul>
         <li>Agence d'aides aux étudiants internationaux</li>
         <li>Mamadou Nobunga</li>
-        <li>e-mail: mamadou.nobunga@aides-international.fr</li>
+        <li>e-mail: mamadou.nobunga@aides-etr.fr</li>
     </ul>
 const aideSanté =
     <ul>
-        <li>Service d'aide en cas d'urgences liées à la santé</li>
+        <li>Service d'aide en cas d'urgences de santé</li>
         <li>Paul Dupont</li>
         <li>e-mail: Paul.dupont@crous.fr</li>
     </ul>
